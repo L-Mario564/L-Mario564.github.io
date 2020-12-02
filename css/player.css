@@ -1,0 +1,100 @@
+.player {
+    display: grid;
+    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 6.5em 6.5em 96em;
+    grid-auto-rows: 1.9em;
+    height: 30.5em;
+    width: 97.5%;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-anchor: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.85em;
+}
+.p-row {
+    display: grid;
+    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 6.5em 6.5em 96em;
+    grid-auto-rows: 1.9em;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+.general, .g-sub, .format, .g-item, .solo, .results, .r-sub, .r-item, .links, .l-sub, .misc, .m-sub, .m-item, .ongoing {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.15em;
+    padding-top: 0.2em;
+}
+.general {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgb(64, 145, 170);
+}
+.g-sub, .format {
+    background-color: rgba(64, 145, 170, 0.7);
+}
+.g-item, .solo {
+    background-color: rgba(64, 145, 170, 0.4);
+}
+.g-item a {
+    text-decoration: none;
+    color: rgb(0, 55, 76);
+}
+.g-item a:hover {
+    color: rgb(80, 135, 156);
+}
+.format {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.results {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    background-color: rgb(100, 191, 147);
+}
+.r-sub {
+    background-color: rgba(100, 191, 147, 0.7);
+}
+.r-item {
+    background-color: rgba(100, 191, 147, 0.4);
+}
+.links {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    background-color: rgb(203, 114, 108);
+}
+.l-item a {
+    text-decoration: none;
+    color: rgb(63, 20, 12);
+}
+.l-item a:hover {
+    color: rgb(143, 100, 82)
+}
+.l-sub {
+    background-color: rgba(203, 114, 108, 0.7);
+}
+.l-item {
+    background-color: rgba(203, 114, 108, 0.4);
+    border-style: solid;
+    border-color: white;
+    border-width: 0.15em;
+    padding-top: 0.1em;
+}
+.misc {
+    background-color: rgb(235, 222, 107);
+}
+.m-sub {
+    background-color: rgba(235, 222, 107, 0.7);
+}
+.m-item {
+    background-color: rgba(235, 222, 107, 0.4);
+}
+.solo {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+.ongoing {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    background-color: lightgray;
+}
