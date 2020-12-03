@@ -3,6 +3,9 @@ body {
     margin: 0;
     font-family: 'Trebuchet MS';
 }
+button {
+    font-family: 'Trebuchet MS';
+}
 .topnav {
     background-color: rgb(0, 6, 12);
     overflow: hidden;
@@ -21,4 +24,62 @@ body {
 }
 .topnav a.inactive:hover {
     color: white;
+}
+.text {
+    float: right;
+    color: gray;
+    padding: 0.7em;
+    font-size: 1em;
+}
+/*Language dropdown*/
+.dropdown-button {
+    background-color: rgb(0, 6, 12);
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8em;
+    border: none;
+    padding: 0.5em 0.5em 0.5em 0.6em;
+    text-align: center;
+}
+.topnav-dropdown {
+    float: right;
+    padding-top: 0.5em;
+    padding-right: 0.8em;
+}
+.dropdown-languages {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 6, 12);
+    width: 2.4em;
+    box-shadow: 0em 0.2em 0.2em 0.2px rgba(0, 6, 12, 0.2);
+    z-index: 1;
+}
+.dropdown-languages a {
+    color: gray;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(0, 6, 12);
+    font-size: 0.8em;
+}
+.dropdown-languages a:hover {
+    color: white;
+}
+.topnav-dropdown:hover .dropdown-languages {
+    display: block;
+}
+.topnav-dropdown:hover .dropdown-button {
+    color: white;
+}
+/*Return to profile button on index.html*/
+input {
+    background-color:rgb(60, 66, 72);
+    color: white;
+    border-style: solid;
+    border-color: rgb(100, 106, 112);
+    width: 14.25em;
+    height: 2.4em;
+}
+input:hover {
+    background-color: whitesmoke;
+    color: rgb(80, 86, 92);
 }

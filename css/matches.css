@@ -1,6 +1,6 @@
 .matches {
     display: grid;
-    grid-template-columns: 12.5em 20em 50em 6em 7em;
+    grid-template-columns: 15.5em 17em 50em 6em 7em;
     grid-auto-rows: 1.9em;
     height: 32em;
     width: 97.5%;
@@ -13,7 +13,7 @@
 }
 .m-row {
     display: grid;
-    grid-template-columns: 12.5em 20em 50em 6em 7em;
+    grid-template-columns: 15.5em 17em 50em 6em 7em;
     grid-auto-rows: 1.9em;
     grid-column-start: 1;
     grid-column-end: 5;
