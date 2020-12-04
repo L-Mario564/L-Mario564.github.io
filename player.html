@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/matches.css">
+    <script src="javascript/main.js"></script>
+    <script src="javascript/functions.js"></script>
 </head>
 <body>
-    <div class="topnav">
+    <div class="topnav" id="topnav">
         <a class="inactive" href="index.html">Home</a>
         <a class="active" href="player.html">Player History</a>
         <a class="inactive" href="staff.html">Staff History</a>
@@ -21,6 +23,7 @@
             </div>
         </div>
         <div class="text">Current language:</div>
+        <a href="javascript:void(0);" class="nav-icon" onclick="responsiveNav()">+</a>
     </div>
     <div style="padding: 1.2em 1.8em; text-align: center;">
         <h1>Player History</h1>
@@ -28,7 +31,7 @@
             All the tournaments I've played in, sorted by chronological order.
         </p>
     </div>
-    <div class="player">
+    <div class="player" id="player">
         <div class="general"><b>General</b></div>
         <div class="results"><b>Results</b></div>
         <div class="links"><b>Links</b></div>
@@ -46,14 +49,14 @@
         <div class="m-sub"><b>Comment(s)</b></div>
     <!--OLRT1-->
         <div class="p-row">
-            <div class="g-item">Osu! Low Rank Tournament</div>
+            <div class="g-item-tourney">Osu! Low Rank Tournament</div>
             <div class="g-item">02/27/2020</div>
             <div class="g-item">1v1</div>
             <div class="g-item">Double Elimination</div>
             <div class="g-item">200k - 400k</div>
             <div class="solo">N/A</div>
             <div class="r-item">1st / 32</div>
-            <div class="r-item">1st / 32</div>
+            <div class="r-item-first">1st / 32</div>
             <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1026857" target="_blank">&#129149</a></div>
             <div class="l-item"><a href="https://challonge.com/ftbess33" target="_blank">&#129149</a></div>
             <div class="m-item">
@@ -62,7 +65,7 @@
         </div>
     <!--NPC2-->
         <div class="p-row">
-            <div class="g-item">Non-Professional Cup 2</div>
+            <div class="g-item-tourney">Non-Professional Cup 2</div>
             <div class="g-item">04/12/2020</div>
             <div class="g-item">2v2</div>
             <div class="g-item">Double Elimination</div>
@@ -83,7 +86,7 @@
         </div>
     <!--OLRT2-->
         <div class="p-row">
-            <div class="g-item">osu! Low Rank Tournament 2</div>
+            <div class="g-item-tourney">osu! Low Rank Tournament 2</div>
             <div class="g-item">07/23/2020</div>
             <div class="g-item">4v4</div>
             <div class="g-item">Double Elimination</div>
@@ -106,7 +109,7 @@
         </div>
     <!--OTVT-->
         <div class="p-row">
-            <div class="g-item">Oddie's TV Size Tournament</div>
+            <div class="g-item-tourney">Oddie's TV Size Tournament</div>
             <div class="g-item">08/05/2020</div>
             <div class="g-item">1v1</div>
             <div class="g-item">Single Elimination</div>
@@ -122,7 +125,7 @@
         </div>
     <!--STK8-->
         <div class="p-row">
-            <div class="g-item">STK8</div>
+            <div class="g-item-tourney">STK8</div>
             <div class="g-item">09/06/2020</div>
             <div class="g-item">2v2</div>
             <div class="g-item">Double Elimination</div>
@@ -142,7 +145,7 @@
         </div>
     <!--BQT2-->
         <div class="p-row">
-            <div class="g-item">BQT2</div>
+            <div class="g-item-tourney">BQT2</div>
             <div class="g-item">09/30/2020</div>
             <div class="g-item">2v2</div>
             <div class="g-item">Double Elimination</div>
@@ -166,7 +169,7 @@
         </div>
     <!--BNC-->
         <div class="p-row">
-            <div class="g-item">Banny Cup</div>
+            <div class="g-item-tourney">Banny Cup</div>
             <div class="g-item">10/20/2020</div>
             <div class="g-item">1v1</div>
             <div class="g-item">Double Elimination</div>
@@ -186,7 +189,7 @@
         </div>
     <!--OST(Nov/Dec)-->
         <div class="p-row">
-        <div class="g-item">Orange's Scuffed Tournament (Nov/Dec)</div>
+        <div class="g-item-tourney">Orange's Scuffed Tournament (Nov/Dec)</div>
         <div class="g-item">10/24/2020</div>
         <div class="g-item">1v1</div>
         <div class="g-item">Single Elimination</div>
@@ -202,13 +205,13 @@
         </div>
     </div>
     <div style="padding: 1.2em 1.8em;">
-        <h2>Total tournaments played in: 8</h2>
-        <h3 style="color: rgb(129, 106, 12);">1st place finishes: 1</h3>
+        <h2 id="tournament-count"></h2>
+        <h3 id="first-place-count" style="color: rgb(129, 106, 12);"></h3>
         <ul>
             <li>Osu! Low Rank Tournament</li>
         </ul>
-        <h3 style="color: rgb(100, 100, 100);">2nd place finishes: 0</h3>
-        <h3 style="color: rgb(131, 86, 55);">3rd place finishes: 0</h3>
+        <h3 id="second-place-count" style="color: rgb(100, 100, 100);">2nd place finishes: 0</h3>
+        <h3 id="third-place-count" style="color: rgb(131, 86, 55);">3rd place finishes: 0</h3>
     </div>
     <div style="padding: 1.2em 1.8em; text-align: center; margin-left: 0%;">
         <h1>Match History</h1>
@@ -216,7 +219,7 @@
             Every match I've played and the results of set matches.
         </p>
     </div>
-    <div class="matches">
+    <div class="matches" id="matches">
         <div class="header"><b>Stage</b></div>
         <div class="opponents"><b>Player / Team</b></div>
         <div class="header"><b>Score</b></div>
@@ -226,7 +229,7 @@
             <div class="tourney">Osu! Low Rank Tournament</div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/12143973">HugFestOOOOO</a>
                 </div>
@@ -235,7 +238,7 @@
             </div>
             <!--RO16-->
             <div class="m-row">
-                <div class="item">Round of 16</div>
+                <div class="item-match">Round of 16</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/15518219">Kocha</a>
                 </div>
@@ -244,7 +247,7 @@
             </div>
             <!--QF-->
             <div class="m-row">
-                <div class="item">Quarterfinals</div>
+                <div class="item-match">Quarterfinals</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/15240084">X_boi_X</a>
                 </div>
@@ -253,7 +256,7 @@
             </div>
             <!--SF-->
             <div class="m-row">
-                <div class="item">Semifinals</div>
+                <div class="item-match">Semifinals</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/9653206">Fourfifty</a>
                 </div>
@@ -262,7 +265,7 @@
             </div>
             <!--F-->
             <div class="m-row">
-                <div class="item">Finals</div>
+                <div class="item-match">Finals</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
                 </div>
@@ -271,7 +274,7 @@
             </div>
             <!--GF-->
             <div class="m-row">
-                <div class="item">Grand Finals</div>
+                <div class="item-match">Grand Finals</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
                 </div>
@@ -280,7 +283,7 @@
             </div>
             <!--BR-->
             <div class="m-row">
-                <div class="item">Bracket Reset</div>
+                <div class="item-match">Bracket Reset</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
                 </div>
@@ -293,7 +296,7 @@
             <div class="tourney">Non-Professional Cup 2</div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="item">Mouse Drift</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/16545385">Himeno_-</a> | 
@@ -304,7 +307,7 @@
             </div>
             <!--RO16-->
             <div class="m-row">
-                <div class="item">Round of 16</div>
+                <div class="item-match">Round of 16</div>
                 <div class="item">Oota e-gamers</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/6169550">bud64</a> | 
@@ -316,7 +319,7 @@
             </div>
             <!--QF-->
             <div class="m-row">
-                <div class="item">Quarterfinals</div>
+                <div class="item-match">Quarterfinals</div>
                 <div class="item">WeHatePP</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/13287997">[Dom]</a> | 
@@ -329,7 +332,7 @@
             </div>
             <!--SF1-->
             <div class="m-row">
-                <div class="item">Loser Semifinals 1</div>
+                <div class="item-match">Loser Semifinals 1</div>
                 <div class="item">Asia-Pacific</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/15197150">forgestrange</a> | 
@@ -341,7 +344,7 @@
             </div>
             <!--SF2-->
             <div class="m-row">
-                <div class="item">Loser Semifinals 2</div>
+                <div class="item-match">Loser Semifinals 2</div>
                 <div class="item">Chuchichäschtli</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/6454830">[ Arikawa ]</a> | 
@@ -353,7 +356,7 @@
             </div>
             <!--F1-->
             <div class="m-row">
-                <div class="item">Loser Finals 1</div>
+                <div class="item-match">Loser Finals 1</div>
                 <div class="item">Young Builders</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/13808132">bu1ld</a> | 
@@ -370,7 +373,7 @@
             <div class="tourney">Osu! Low Rank Tournament 2</div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="item">#FightingDucks</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/16182877">HELENKILLER1337</a> | 
@@ -384,7 +387,7 @@
                 <div class="won">Won</div>
             </div>
             <!--RO16-->
-            <div class="m-row">
+            <div class="item-match">
                 <div class="item">Round of 16</div>
                 <div class="item">Intermediate Momentum Retreat</div>
                 <div class="item">
@@ -399,7 +402,7 @@
             </div>
             <!--QF-->
             <div class="m-row">
-                <div class="item">Quarterfinals</div>
+                <div class="item-match">Quarterfinals</div>
                 <div class="item">twitter.com/NM1hater</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/3548020">Nannner</a> | 
@@ -414,7 +417,7 @@
             </div>
             <!--SF1-->
             <div class="m-row">
-                <div class="item">Loser Semifinals 1</div>
+                <div class="item-match">Loser Semifinals 1</div>
                 <div class="item">Harumachi Clover</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/14356517">Mashyuf</a> | 
@@ -433,7 +436,7 @@
             <div class="tourney">Oddie's TV Size Tournament</div>
             <!--RO128-->
             <div class="m-row">
-                <div class="item">Round of 128</div>
+                <div class="item-match">Round of 128</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/13748814">ZedTronex</a>
                 </div>
@@ -442,7 +445,7 @@
             </div>
             <!--RO64-->
             <div class="m-row">
-                <div class="item">Round of 64</div>
+                <div class="item-match">Round of 64</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/13347736">T-Bounce</a>
                 </div>
@@ -451,7 +454,7 @@
             </div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/15103117">DevilmanAkira</a>
                 </div>
@@ -464,7 +467,7 @@
             <div class="tourney">STK8</div>
             <!--GS1-->
             <div class="m-row">
-                <div class="item">Group Stage 1</div>
+                <div class="item-match">Group Stage 1</div>
                 <div class="item">Phantom Strikers</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/14093519">MrNoLife</a> | 
@@ -476,7 +479,7 @@
             </div>
             <!--GS2-->
             <div class="m-row">
-                <div class="item">Group Stage 2</div>
+                <div class="item-match">Group Stage 2</div>
                 <div class="item">MOPA</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/16434368">mihawkx</a> | 
@@ -488,7 +491,7 @@
             </div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="item">JP2GMD</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/14285991">KubusOwO</a> | 
@@ -499,7 +502,7 @@
             </div>
             <!--RO16-->
             <div class="m-row">
-                <div class="item">Round of 16</div>
+                <div class="item-match">Round of 16</div>
                 <div class="item">Team Borger</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/2887386">Sakubus</a> | 
@@ -511,7 +514,7 @@
             </div>
             <!--QF1-->
             <div class="m-row">
-                <div class="item">Loser Quarterfinals 1</div>
+                <div class="item-match">Loser Quarterfinals 1</div>
                 <div class="item">a</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/15556259">uzadabegora</a> | 
@@ -523,7 +526,7 @@
             </div>
             <!--QF2-->
             <div class="m-row">
-                <div class="item">Loser Quarterfinals 2</div>
+                <div class="item-match">Loser Quarterfinals 2</div>
                 <div class="item">macdonal burger</div>
                 <div class="item">
                     <a href="https://osu.ppy.sh/users/14926256">fseeb</a> | 
@@ -549,7 +552,7 @@
             <div class="tourney">Orange's Scuffed Tournament (Nov/Dec)</div>
             <!--RO32-->
             <div class="m-row">
-                <div class="item">Round of 32</div>
+                <div class="item-match">Round of 32</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/10863898">EzEveryTime</a>
                 </div>
@@ -558,7 +561,7 @@
             </div>
             <!--RO16-->
             <div class="m-row">
-                <div class="item">Round of 16</div>
+                <div class="item-match">Round of 16</div>
                 <div class="m-solo">
                     <a href="https://osu.ppy.sh/users/10287120">Tonatious</a>
                 </div>
@@ -568,9 +571,9 @@
         </div>
     </div>
     <div style="padding: 1.2em 1.8em;">
-        <h2>Total match count: 28</h2>
-        <h3>Total matches won: 19</h3>
-        <h3>Total matches lost: 9</h3>
+        <h2 id="match-count">Total match count: 28</h2>
+        <h3 id="match-win-count"></h3>
+        <h3 id="match-loss-count">Total matches lost: 9</h3>
         <p>
             <b>Note:</b> These stats are only counted from finished tournaments.
         </p>

@@ -19,7 +19,7 @@
     grid-column-start: 1;
     grid-column-end: 13;
 }
-.general, .g-sub, .format, .g-item, .solo, .results, .r-sub, .r-item, .links, .l-sub, .misc, .m-sub, .m-item, .ongoing {
+.general, .g-sub, .format, .g-item, .solo, .results, .r-sub, .r-item, .links, .l-sub, .misc, .m-sub, .m-item, .ongoing, .g-item-tourney, .r-item-first, .r-item-second, .r-item-third {
     border-style: solid;
     border-color: white;
     border-width: 0.15em;
@@ -33,7 +33,7 @@
 .g-sub, .format {
     background-color: rgba(64, 145, 170, 0.7);
 }
-.g-item, .solo {
+.g-item, .solo, .g-item-tourney {
     background-color: rgba(64, 145, 170, 0.4);
 }
 .g-item a {
@@ -55,7 +55,7 @@
 .r-sub {
     background-color: rgba(100, 191, 147, 0.7);
 }
-.r-item {
+.r-item, .r-item-first, .r-item-second, .r-item-third {
     background-color: rgba(100, 191, 147, 0.4);
 }
 .links {

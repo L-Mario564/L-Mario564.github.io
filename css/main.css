@@ -31,7 +31,35 @@ button {
     padding: 0.7em;
     font-size: 1em;
 }
-/*Language dropdown*/
+/*responsive navbar*/
+.topnav .nav-icon {
+    display: none;
+    font-size: 1.25em;
+}
+.topnav .nav-icon:hover {
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.nav-icon {
+    float: left;
+    display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.nav-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/*language dropdown*/
 .dropdown-button {
     background-color: rgb(0, 6, 12);
     color: gray;
@@ -70,7 +98,7 @@ button {
 .topnav-dropdown:hover .dropdown-button {
     color: white;
 }
-/*Return to profile button on index.html*/
+/*return to profile button on index.html*/
 input {
     background-color:rgb(60, 66, 72);
     color: white;

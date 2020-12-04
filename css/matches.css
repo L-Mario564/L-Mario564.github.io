@@ -18,7 +18,7 @@
     grid-column-start: 1;
     grid-column-end: 5;
 }
-.header, .opponents, .tourney, .item, .tourney, .m-solo, .lost, .won, .m-ongoing  {
+.header, .opponents, .tourney, .item, .tourney, .m-solo, .lost, .won, .m-ongoing, .item-match  {
     border-style: solid;
     border-color: white;
     border-width: 0.15em;
@@ -27,7 +27,7 @@
 .header, .opponents {
     background-color: rgb(178, 140, 214);
 }
-.item, .m-solo {
+.item, .m-solo, .item-match {
     background-color: rgba(178, 140, 214, 0.4)
 }
 .opponents {
