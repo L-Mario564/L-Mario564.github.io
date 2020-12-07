@@ -89,12 +89,11 @@
     grid-row-start: 33;
     grid-row-end: 35;
 }
-/*Change this and everything below when this tourney ends*/
 #bnc {
     grid-row-start: 35;
-    grid-row-end: 37;
+    grid-row-end: 42;
 }
 #ost {
-    grid-row-start: 37;
-    grid-row-end: 40;
+    grid-row-start: 42;
+    grid-row-end: 45;
 }
