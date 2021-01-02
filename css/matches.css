@@ -84,16 +84,15 @@
     grid-row-start: 26;
     grid-row-end: 33;
 }
-/*Change this and everything below when this tourney ends*/
 #bqt2 {
     grid-row-start: 33;
-    grid-row-end: 35;
-}
-#bnc {
-    grid-row-start: 35;
     grid-row-end: 42;
 }
-#ost {
+#bnc {
     grid-row-start: 42;
-    grid-row-end: 45;
+    grid-row-end: 49;
+}
+#ost {
+    grid-row-start: 49;
+    grid-row-end: 50;
 }
