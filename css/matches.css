@@ -94,5 +94,13 @@
 }
 #ost {
     grid-row-start: 49;
-    grid-row-end: 50;
+    grid-row-end: 52;
+}
+#awt {
+    grid-row-start: 52;
+    grid-row-end: 57;
+}
+#lf6dc {
+    grid-row-start: 57;
+    grid-row-end: 65;
 }

@@ -1,4 +1,4 @@
-//responsive topnav bar
+// Responsive topnav bar
 function responsiveNav() {
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {
@@ -6,4 +6,4 @@ function responsiveNav() {
     } else {
       x.className = "topnav";
     }
-} 
+}

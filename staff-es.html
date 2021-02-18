@@ -6,10 +6,13 @@
     <title>El Historial De Torneos De Mario564</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/staff.css">
     <script src="javascript/main.js"></script>
+    <script src="javascript/staff-counting.js"></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
+        <img class="other" src="assets/icons/favicon.png" width="40" height="40">
         <a class="inactive" href="index-es.html">Inicio</a>
         <a class="inactive" href="player-es.html">Historial De Jugador</a>
         <a class="active" href="staff-es.html">Historial De Staff</a>
@@ -22,6 +25,58 @@
         <div class="text">Idioma actual:</div>
         <a href="javascript:void(0);" class="nav-icon" onclick="responsiveNav()">+</a>
     </div>
-    nada que ver aqu&iacute; (a&uacute;n)
+    <div class="content">
+        <div style="padding: 1.2em 1.8em; text-align: center;">
+        <h1>Historial De Staff</h1>
+        <p>
+            Todos los torneos en que he sido staff y mis roles en ellos.
+        </p>
+        <h2>Información general</h2>
+        <h3 id="staff-count-es"></h3>
+        </div>
+        <div id="overview">
+        <div id="role"><b>Roles</b></div>
+        <div id="ref"><b>Árbitro</b></div>
+        <div id="pooler"><b>Mappooler</b></div>
+        <div id="commentator"><b>Comentarista</b></div>
+        <div id="streamer"><b>Streamer</b></div>
+        <div id="sheeter"><b>Admr. de Hojas de Cálculo</b></div>
+        <div id="gfx"><b>Diseñador de GFX</b></div>
+        <div id="sub-role">Cantidad como staff</div>
+        <div id="sub-ref"></div>
+        <div id="sub-pooler"></div>
+        <div id="sub-commentator"></div>
+        <div id="sub-streamer"></div>
+        <div id="sub-sheeter"></div>
+        <div id="sub-gfx"></div>
+        </div>
+        <div style="padding: 1.2em 1.8em; text-align: center;">
+        <h2>Detalles</h2>
+        </div>
+        <div id="details">
+        <div class="header"><b>Nombre Del Torneo</b></div>
+        <div class="header"><b>Fecha</b></div>
+        <div class="header"><b>Forum Post</b></div>
+        <div class="header" id="header-role"><b>Rol(es)</b></div>
+        <!--TC-->
+        <div class="s-row">
+            <div class="tourney">Tomori Cup</div>
+            <div class="date">01/10/2021</div>
+            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1222027" target="_blank">&#129149</a></div>
+            <div class="ref">Árbitro</div>
+            <div class="blank5"></div>
+        </div>
+        <!--PDN-->
+        <div class="s-row">
+            <div class="tourney">Pas De Nom</div>
+            <div class="date">02/01/2021</div>
+            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1239289" target="_blank">&#129149</a></div>
+            <div class="ref">Árbitro</div>
+            <div class="sheeter">Admr. de Hojas...</div>
+            <div class="gfx">Diseñador de GFX</div>
+            <div class="blank3"></div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

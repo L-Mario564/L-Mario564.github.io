@@ -1,6 +1,6 @@
 .player {
     display: grid;
-    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 6.5em 6.5em 96em;
+    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 7em 7em 96em;
     grid-auto-rows: 1.9em;
     height: 30.5em;
     width: 97.5%;
@@ -14,7 +14,7 @@
 }
 .p-row {
     display: grid;
-    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 6.5em 6.5em 96em;
+    grid-template-columns: 22em 7.8em 3.7em 11em 8.4em 20em 50em 8.2em 8.2em 7em 7em 96em;
     grid-auto-rows: 1.9em;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -63,7 +63,7 @@
     grid-column-end: 12;
     background-color: rgb(203, 114, 108);
 }
-.l-item a {
+.l-item b, .l-item a {
     text-decoration: none;
     color: rgb(63, 20, 12);
 }

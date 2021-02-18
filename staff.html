@@ -6,10 +6,13 @@
     <title>Mario564's Tournament History</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/staff.css">
     <script src="javascript/main.js"></script>
+    <script src="javascript/staff-counting.js"></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
+        <img class="other" src="assets/icons/favicon.png" width="40" height="40">
         <a class="inactive" href="index.html">Home</a>
         <a class="inactive" href="player.html">Player History</a>
         <a class="active" href="staff.html">Staff History</a>
@@ -22,6 +25,58 @@
             <div class="text">Current language:</div>
         <a href="javascript:void(0);" class="nav-icon" onclick="responsiveNav()">+</a>
     </div>
-    nothing to see here (yet)
+    <div class="content">
+        <div style="padding: 1.2em 1.8em; text-align: center;">
+        <h1>Staff History</h1>
+        <p>
+            All the tournaments I've staffed in and the roles I've played in them.
+        </p>
+        <h2>Overview</h2>
+        <h3 id="staff-count"></h3>
+        </div>
+        <div id="overview">
+        <div id="role"><b>Roles</b></div>
+        <div id="ref"><b>Referee</b></div>
+        <div id="pooler"><b>Mappooler</b></div>
+        <div id="commentator"><b>Commentator</b></div>
+        <div id="streamer"><b>Streamer</b></div>
+        <div id="sheeter"><b>Spreadsheeter</b></div>
+        <div id="gfx"><b>GFX Designer</b></div>
+        <div id="sub-role">Times staffed</div>
+        <div id="sub-ref"></div>
+        <div id="sub-pooler"></div>
+        <div id="sub-commentator"></div>
+        <div id="sub-streamer"></div>
+        <div id="sub-sheeter"></div>
+        <div id="sub-gfx"></div>
+        </div>
+        <div style="padding: 1.2em 1.8em; text-align: center;">
+        <h2>Details</h2>
+        </div>
+        <div id="details">
+        <div class="header"><b>Tournament Name</b></div>
+        <div class="header"><b>Date</b></div>
+        <div class="header"><b>Forum Post</b></div>
+        <div class="header" id="header-role"><b>Role(s)</b></div>
+        <!--TC-->
+        <div class="s-row">
+            <div class="tourney">Tomori Cup</div>
+            <div class="date">01/10/2021</div>
+            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1222027" target="_blank">&#129149</a></div>
+            <div class="ref">Referee</div>
+            <div class="blank5"></div>
+        </div>
+        <!--PDN-->
+        <div class="s-row">
+            <div class="tourney">Pas De Nom</div>
+            <div class="date">02/01/2021</div>
+            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1239289" target="_blank">&#129149</a></div>
+            <div class="ref">Referee</div>
+            <div class="sheeter">Spreadsheeter</div>
+            <div class="gfx">GFX Designer</div>
+            <div class="blank3"></div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
