@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario564's Tournament History</title>
+    <title>Player History</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/player.css">
-    <link rel="stylesheet" href="css/matches.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="javascript/main.js"></script>
-    <script src="javascript/player-counting.js"></script>
+    <script src="javascript/player.js"></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
-        <img class="other" src="assets/icons/favicon.png" width="40" height="40">
+        <img class="other" src="assets/icons/trophy.png" width="40" height="40">
         <a class="inactive" href="index.html">Home</a>
         <a class="active" href="player.html">Player History</a>
         <a class="inactive" href="staff.html">Staff History</a>
@@ -30,885 +30,832 @@
         <div style="padding: 1.2em 1.8em; text-align: center;">
         <h1>Player History</h1>
         <p>
-            All the tournaments I've played in, sorted by chronological order.
+            All the tournaments I've played in, giving out the most important details like the tournament's name, rank range, forum post date, placement, match results, and more. Tournament's are sorted in chronological order, from newest to oldest.
         </p>
-        </div>
-        <div class="player" id="player">
-        <div class="general"><b>General</b></div>
-        <div class="results"><b>Results</b></div>
-        <div class="links"><b>Links</b></div>
-        <div class="misc"><b>Misc.</b></div>
-        <div class="g-sub"><b>Tournament Name</b></div>
-        <div class="g-sub"><b>Date</b></div>
-        <div class="format"><b>Format</b></div>
-        <div class="g-sub"><b>Rank Range</b></div>
-        <div class="g-sub"><b>Team Name</b></div>
-        <div class="g-sub"><b>Teammates</b></div>
-        <div class="r-sub"><b>Seeding</b></div>
-        <div class="r-sub"><b>Placement</b></div>
-        <div class="l-sub"><b>Forum Post</b></div>
-        <div class="l-sub"><b>Challonge</b></div>
-        <div class="m-sub"><b>Comment(s)</b></div>
-    <!--OLRT1-->
-        <div class="p-row">
-            <div class="g-item-tourney">Osu! Low Rank Tournament</div>
-            <div class="g-item">02/27/2020</div>
-            <div class="g-item">1v1</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">200k - 400k</div>
-            <div class="solo">N/A</div>
-            <div class="r-item">1st / 32</div>
-            <div class="r-item-first">1st / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1026857" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/ftbess33" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                First ever tournament! Started to get involved with the community here. Took quite a bit to end, but it was still fun.
-            </div>
-        </div>
-    <!--NPC2-->
-        <div class="p-row">
-            <div class="g-item-tourney">Non-Professional Cup 2</div>
-            <div class="g-item">04/12/2020</div>
-            <div class="g-item">2v2</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">150k - 250k</div>
-            <div class="g-item">Fashionably Late</div>
-            <div class="g-item">
-                <a href="https://osu.ppy.sh/users/11740481" target="_blank">Dream10</a> | 
-                <a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a> | 
-                <a href="https://osu.ppy.sh/users/12056779" target="_blank">Serlum</a>
-            </div>
-            <div class="r-item">4th /  44</div>
-            <div class="r-item">Top 6 / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1051009" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/wne60mu5" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                Had a great team overall, and matches we're pretty close for us (ngl higher placement was possible).
-            </div>
-        </div>
-    <!--OLRT2-->
-        <div class="p-row">
-            <div class="g-item-tourney">osu! Low Rank Tournament 2</div>
-            <div class="g-item">07/23/2020</div>
-            <div class="g-item">4v4</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">100k - 350k</div>
-            <div class="g-item">No Skill</div>
-            <div class="g-item">
-                <a href="https://osu.ppy.sh/users/15676464" target="_blank">chrissi</a> | 
-                <a href="https://osu.ppy.sh/users/12420508" target="_blank">JesusWCS</a> | 
-                <a href="https://osu.ppy.sh/users/14967328" target="_blank">Mysteri04</a> |
-                <a href="https://osu.ppy.sh/users/16229987" target="_blank">r6echo14</a> |
-                <a href="https://osu.ppy.sh/users/12056779" target="_blank">Serlum</a>
-            </div>
-            <div class="r-item">9th / 50</div>
-            <div class="r-item">Top 10 / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1111565" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/9ijnmf1x" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                I had a few problems on the way both individually and as a team, which resulted in a bit of an off performance but we still managed something.
-            </div>
-        </div>
-    <!--OTVT-->
-        <div class="p-row">
-            <div class="g-item-tourney">Oddie's TV Size Tournament</div>
-            <div class="g-item">08/05/2020</div>
-            <div class="g-item">1v1</div>
-            <div class="g-item">Single Elimination</div>
-            <div class="g-item">100k - 999k</div>
-            <div class="solo">N/A</div>
-            <div class="r-item">8th / 188</div>
-            <div class="r-item">Top 32 / 128</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1120107" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/ux6hpeu7" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                Started scuffed, but got slitghly better as time went, and by the end of it, it was a somewhat enjoyable experience for the most part. (Had to FF because of an external issue).
-            </div>
-        </div>
-    <!--STK8-->
-        <div class="p-row">
-            <div class="g-item-tourney">STK8</div>
-            <div class="g-item">09/06/2020</div>
-            <div class="g-item">2v2</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">80k - 150k</div>
-            <div class="g-item">Totally Not Derankers</div>
-            <div class="g-item">
-                <a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a> | 
-                <a href="https://osu.ppy.sh/users/8240995" target="_blank">Joryan_Inkling</a>
-            </div>
-            <div class="r-item">- / 60</div>
-            <div class="r-item">Top 16 / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1139956" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/STK8" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                Super fun tournament, matches where bangers, defeated by 2 borger teams and my first dive into 5 digit tournaments, definitely the STK experience.
-            </div>
-        </div>
-    <!--BQT2-->
-        <div class="p-row">
-            <div class="g-item-tourney">BQT2</div>
-            <div class="g-item">09/30/2020</div>
-            <div class="g-item">2v2</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">100k - 350k</div>
-            <div class="g-item">Begone Farmers</div>
-            <div class="g-item">
-                <a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a> | 
-                <a href="https://osu.ppy.sh/users/8240995" target="_blank">Joryan_Inkling</a>
-            </div>
-            <div class="r-item">3rd / 87</div>
-            <div class="r-item">Top 6 / 64</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1154593" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/BQT2" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                Another very fun tourney, as well as great teamamtes to go with it.
-            </div>
-        </div>
-    <!--BNC-->
-        <div class="p-row">
-            <div class="g-item-tourney">Banny Cup</div>
-            <div class="g-item">10/20/2020</div>
-            <div class="g-item">1v1</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">Undefined</div>
-            <div class="solo">N/A</div>
-            <div class="r-item">9th / 22</div>
-            <div class="r-item">4th / 16</div>
-            <div class="l-item"><a href="https://imgur.com/mJX44dw" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/Bannycup" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                My best loser bracket comeback lol (Up until this point).
-            </div>
-        </div>
-    <!--OST(Nov/Dec)-->
-        <div class="p-row">
-            <div class="g-item-tourney">Orange's Scuffed Tournament (Nov/Dec)</div>
-            <div class="g-item">10/24/2020</div>
-            <div class="g-item">1v1</div>
-            <div class="g-item">Single Elimination</div>
-            <div class="g-item">100k - 200k</div>
-            <div class="solo">N/A</div>
-            <div class="r-item">15th / 89</div>
-            <div class="r-item">Top 16 / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1168579" target="_blank">&#129149</a></div>
-            <div class="l-item"><a href="https://challonge.com/ost_11_2020" target="_blank">&#129149</a></div>
-            <div class="m-item">
-                For a tournament with "scuffed" in it's name, it wasn't half bad I'd say, also 2nd match was very fun.
-            </div>
-        </div>
-    <!--AWT-->
-        <div class="p-row">
-            <div class="g-item-tourney">Aeris Winter Tournament 2020</div>
-            <div class="g-item">12/07/2020</div>
-            <div class="g-item">2v2</div>
-            <div class="g-item">Single Elimination</div>
-            <div class="g-item">60k - 160k</div>
-            <div class="g-item">Frencher Toast</div>
-            <div class="g-item">
-                <a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a> | 
-                <a href="https://osu.ppy.sh/users/16657449" target="_blank">AndromedaX1</a> |
-                <a href="https://osu.ppy.sh/users/14373729" target="_blank">YesImSatan</a>
-            </div>
-            <div class="r-item">6th / 36</div>
-            <div class="r-item">4th / 16</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1197583" target="_blank">&#129149</a></div>
-            <div class="l-item"><b>N/A</b></div>
-            <div class="m-item">
-                Ok
-            </div>
-        </div>
-    <!--LF6DC-->
-        <div class="p-row">
-            <div class="g-item-tourney">Lolis Fantasy 6 Digits Cup</div>
-            <div class="g-item">12/13/2020</div>
-            <div class="g-item">1v1</div>
-            <div class="g-item">Double Elimination</div>
-            <div class="g-item">100k-450k</div>
-            <div class="solo">N/A</div>
-            <div class="r-item">3rd / 53</div>
-            <div class="r-item-second">2nd / 32</div>
-            <div class="l-item"><a href="https://osu.ppy.sh/community/forums/topics/1201581" target="_blank">&#129149</a></div>
-            <div class="l-item"><b>N/A</b></div>
-            <div class="m-item">
-                I really liked the slightly different style of pooling for this one, which made for a pretty good tourney despite the staff count.
-            </div>
-        </div>
-    <!--LCW-->
-        <div class="p-row">
-        <div class="g-item-tourney">Lilac Cup Winter 2021</div>
-        <div class="g-item">01/23/2021</div>
-        <div class="g-item">2v2</div>
-        <div class="g-item">Double Elimination</div>
-        <div class="g-item">100k - 250k</div>
-        <div class="g-item">:joyplush: 2</div>
-        <div class="g-item">
-            <a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a> | 
-            <a href="https://osu.ppy.sh/users/8295497" target="_blank">Lapisz</a> 
-        </div>
-        <div class="ongoing">On-going</div>
-        </div>
-    <!--OSDL-->
-        <div class="p-row">
-        <div class="g-item-tourney">osu! 6 Digit League Spring 2021</div>
-        <div class="g-item">02/12/2021</div>
-        <div class="g-item">1v1</div>
-        <div class="g-item">Double Elimination</div>
-        <div class="g-item">90k - 999k</div>
-        <div class="g-item">When You See It</div>
-        <div class="g-item">
-            <a href="https://osu.ppy.sh/users/16052525" target="_blank">Geag</a> | 
-            <a href="https://osu.ppy.sh/users/8240995" target="_blank">Joryan_Inkling</a> 
-        </div>
-        <div class="ongoing">On-going</div>
-        </div>
-        </div>
-        <div style="padding: 1.2em 1.8em;">
-        <h2 id="tournament-count"></h2>
-        <h3 id="first-place-count" style="color: rgb(129, 106, 12);"></h3>
-        <ul>
-            <li>Osu! Low Rank Tournament</li>
-        </ul>
-        <h3 id="second-place-count" style="color: rgb(100, 100, 100);"></h3>
-        <ul>
-            <li>Lolis Fantasy 6 Digits Cup</li>
-        </ul>
-        <h3 id="third-place-count" style="color: rgb(131, 86, 55);">3rd place finishes: 0</h3>
-        </div>
-        <div style="padding: 1.2em 1.8em; text-align: center; margin-left: 0%;">
-        <h1>Match History</h1>
-        <p>
-            Every match I've played and the results of set matches.
-        </p>
-        </div>
-        <div class="matches" id="matches">
-        <div class="header"><b>Stage</b></div>
-        <div class="opponents"><b>Player / Team</b></div>
-        <div class="header"><b>Score</b></div>
-        <div class="header"><b>Outcome</b></div>
-        <!--OLRT1-->
-        <div class="m-row" id="olrt1">
-            <div class="tourney">Osu! Low Rank Tournament</div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/12143973">HugFestOOOOO</a>
+        </div><br>
+        <div style="text-align: center;">
+            <div class="overview">
+                <div id="overview-1">
+                    <h3>Matches</h3>
+                    <b>Total Match Count</b><br>
+                    <p id="matches">0</p>
+                    <b>Total Matches Won</b><br>
+                    <p id="won">0</p>
+                    <b>Total Matches Lost</b><br>
+                    <p id="lost">0</p>
+                    <b>Winrate</b><br>
+                    <p id="winrate">0</p>
                 </div>
-                <div class="item">0 - FF</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/15518219">Kocha</a>
+                <div id="overview-2"><h3>Top Placements</h3></div>
+                <div>
+                    <img src="assets/icons/medal-1st.png" class="medal"><br><br><br>
+                    <b>1st Place Finishes</b><br>
+                    <p id="1st">0</p>
                 </div>
-                <div class="item">4 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Quarterfinals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/15240084">X_boi_X</a>
+                <div>
+                    <img src="assets/icons/medal-2nd.png" class="medal"><br><br><br>
+                    <b>2nd Place Finishes</b><br>
+                    <p id="2nd">0</p>
                 </div>
-                <div class="item">5 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF-->
-            <div class="m-row">
-                <div class="item-match">Semifinals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/9653206">Fourfifty</a>
+                <div>
+                    <img src="assets/icons/medal-3rd.png" class="medal"><br><br><br>
+                    <b>3rd Place Finishes</b><br>
+                    <p id="3rd">0</p>
                 </div>
-                <div class="item">6 - 3</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F-->
-            <div class="m-row">
-                <div class="item-match">Finals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
+            </div><br><br>
+        </div><br><br><br>
+        <div class="player-history" style="font-size: 3em;">         
+            <!--LF6DC-->
+            <div class="tournament" style="background-image: url('assets/banners/lf6dc.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1201581" target="_blank">Lolis Fantasy 6 Digits Cup</a></div>
+                <div class="placement-2nd">2nd Place</div>
+                <div class="blank2"></div>
+                <div class="date">Dec 13, 2020</div>
+                <div class="rank-range">100k-450k</div>
+                <div class="format1">1v1</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">53 Players</div>
+                <div class="seed">Seeded 3rd</div>
+                <div class="blank2"></div>
+                <div class="view-more"><button type="button" id="lf6dc-b">+</button></div>
+            </div><div class="match-history" id="lf6dc">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><a href="https://osu.ppy.sh/users/14868720" target="_blank">ALDHACAST</a></td>
+                        <td>5 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 16</td>
+                        <td><a href="https://osu.ppy.sh/users/4267947" target="_blank">Linkel</a></td>
+                        <td>5 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Quarterfinals</td>
+                        <td><a href="https://osu.ppy.sh/users/9214489" target="_blank">Robertelio12</a></td>
+                        <td>5 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Semifinals</td>
+                        <td><a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a></td>
+                        <td>6 - 5</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Finals</td>
+                        <td><a href="https://osu.ppy.sh/users/13398045" target="_blank">GarciXD</a></td>
+                        <td>7 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Grand Finals</td>
+                        <td><a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a></td>
+                        <td>7 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Bracket Reset</td>
+                        <td><a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a></td>
+                        <td>7 - 3</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--AWT-->
+            <div class="tournament" style="background-image: url('assets/banners/awt.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1197583" target="_blank">Aeris Winter Tournament 2020</a></div>
+                <div class="placement">4th Place</div>
+                <div class="blank2"></div>
+                <div class="date">Dec 07, 2020</div>
+                <div class="rank-range">60k - 160k</div>
+                <div class="format1">2v2</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">36 Teams</div>
+                <div class="seed">Seeded 6th</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="awt-b">+</button></div>
+            </div><div class="extension-3t">
+                <div class="team-name">Frencher Toast</div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/PE.png"><br>
+                    <a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a>
                 </div>
-                <div class="item">6 - 3</div>
-                <div class="won">Won</div>
-            </div>
-            <!--GF-->
-            <div class="m-row">
-                <div class="item-match">Grand Finals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/16657449" target="_blank">AndromedaX1</a>
                 </div>
-                <div class="item">7 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--BR-->
-            <div class="m-row">
-                <div class="item-match">Bracket Reset</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13743386">Necroplex</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/SK.png"><br>
+                    <a href="https://osu.ppy.sh/users/14373729" target="_blank">YesImSatan</a>
                 </div>
-                <div class="item">7 - 5</div>
-                <div class="won">Won</div>
-            </div>
-        </div>
-        <!--NPC2-->
-        <div class="m-row" id="npc2">
-            <div class="tourney">Non-Professional Cup 2</div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="item">Mouse Drift</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/16545385">Himeno_-</a> | 
-                    <a href="https://osu.ppy.sh/users/12582103">Kleemann</a>
+            </div><div class="match-history" id="awt">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 16</td>
+                        <td><b>Rojak</b><br>
+                            <a href="https://osu.ppy.sh/users/11627196" target="_blank">lewis_0873</a> | 
+                            <a href="https://osu.ppy.sh/users/12629272" target="_blank">Xavernus</a> | 
+                            <a href="https://osu.ppy.sh/users/3191010" target="_blank">Andy26</a> | 
+                            <a href="https://osu.ppy.sh/users/13347736" target="_blank">T-Bounce</a>
+                        </td>
+                        <td>4 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Quarterfinals</td>
+                        <td><b>Memory Snow</b><br>
+                            <a href="https://osu.ppy.sh/users/10287120" target="_blank">Tonatious</a> | 
+                            <a href="https://osu.ppy.sh/users/15452931" target="_blank">Madison Beer</a> | 
+                            <a href="https://osu.ppy.sh/users/10766611" target="_blank">NekoMeganG</a> | 
+                            <a href="https://osu.ppy.sh/users/8173495" target="_blank">WackyFlo</a>
+                        </td>
+                        <td>5 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Semifinals</td>
+                        <td><b>A side of noob</b><br>
+                            <a href="https://osu.ppy.sh/users/13179722" target="_blank">unicornlover</a> | 
+                            <a href="https://osu.ppy.sh/users/1013605" target="_blank">ScarletSisters</a> | 
+                            <a href="https://osu.ppy.sh/users/7538431" target="_blank">Vagrant</a> | 
+                            <a href="https://osu.ppy.sh/users/7452074" target="_blank">Shark</a>
+                        </td>
+                        <td>5 - 3</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Bronze Match</td>
+                        <td><b>idk dude</b><br>
+                            <a href="https://osu.ppy.sh/users/12404726" target="_blank">EternalDawn</a> | 
+                            <a href="https://osu.ppy.sh/users/9370167" target="_blank">Naviless</a> | 
+                            <a href="https://osu.ppy.sh/users/14687489" target="_blank">Dylann</a> | 
+                            <a href="https://osu.ppy.sh/users/10319851" target="_blank">SSScotty</a>
+                        </td>
+                        <td>6 - 1</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--OST-->
+            <div class="tournament" style="background-image: url('assets/banners/ost.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1168579" target="_blank">Orange's Scuffed Tournament (Nov/Dec)</a></div>
+                <div class="placement"><a href="https://challonge.com/ost_11_2020" target="_blank">Top 16</a></div>
+                <div class="blank2"></div>
+                <div class="date">Oct 24, 2020</div>
+                <div class="rank-range">100k - 200k</div>
+                <div class="format1">1v1</div>
+                <div class="format2">Single Elimination</div>
+                <div class="player-count">89 Players</div>
+                <div class="seed">Seeded 15th</div>
+                <div class="blank2"></div>
+                <div class="view-more"><button type="button" id="ost-b">+</button></div>
+            </div><div class="match-history" id="ost">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><a href="https://osu.ppy.sh/users/10863898" target="_blank">EzEveryTime</a></td>
+                        <td>4 - 2</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Round of 16</td>
+                        <td><a href="https://osu.ppy.sh/users/10287120" target="_blank">Tonatious</a></td>
+                        <td>5 - 3</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--BNC-->
+            <div class="tournament" style="background-image: url('assets/banners/bnc.png');">
+                <div class="tournament-name"><a href="https://imgur.com/mJX44dw" target="_blank">Banny Cup</a></div>
+                <div class="placement"><a href="https://challonge.com/Bannycup" target="_blank">4th Place</a></div>
+                <div class="blank2"></div>
+                <div class="date">Oct 20, 2020</div>
+                <div class="rank-range">Yes</div>
+                <div class="format1">1v1</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">22 Players</div>
+                <div class="seed">Seeded 9th</div>
+                <div class="blank2"></div>
+                <div class="view-more"><button type="button" id="bnc-b">+</button></div>
+            </div><div class="match-history" id="bnc">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Round of 16</td>
+                        <td><a href="https://osu.ppy.sh/users/12176990" target="_blank">PanzersIV</a></td>
+                        <td>5 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Quarterfinals</td>
+                        <td><a href="https://osu.ppy.sh/users/14270286" target="_blank">Shiro4102</a></td>
+                        <td>5 - 2</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 1</td>
+                        <td><a href="https://osu.ppy.sh/users/13741233" target="_blank">Hayuraaa</a></td>
+                        <td>6 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 2</td>
+                        <td><a href="https://osu.ppy.sh/users/14610323" target="_blank">DarkeDiamonds</a></td>
+                        <td>6 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Finals 1</td>
+                        <td><a href="https://osu.ppy.sh/users/13644465" target="_blank">Suika7</a></td>
+                        <td>0 - FF</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Loser Finals 2</td>
+                        <td><a href="https://osu.ppy.sh/users/8650585" target="_blank">bannynino</a></td>
+                        <td>6 - 0</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--BQT2-->
+            <div class="tournament" style="background-image: url('assets/banners/bqt2.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1154593" target="_blank">BQT2</a></div>
+                <div class="placement"><a href="https://challonge.com/BQT2" target="_blank">Top 6</a></div>
+                <div class="blank2"></div>
+                <div class="date">Sep 30, 2020</div>
+                <div class="rank-range">100k - 350k</div>
+                <div class="format1">2v2</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">87 Teams</div>
+                <div class="seed">Seeded 3rd</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="bqt2-b">+</button></div>
+            </div><div class="extension-2t">
+                <div class="team-name">Begone Farmers</div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/PE.png"><br>
+                    <a href="https://osu.ppy.sh/users/11364009" target="_blank">Alonso2903</a>
                 </div>
-                <div class="item">5 - 2</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="item">Oota e-gamers</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/6169550">bud64</a> | 
-                    <a href="https://osu.ppy.sh/users/9036973">FornariLoL</a> | 
-                    <a href="https://osu.ppy.sh/users/12220691">pecefulpro</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/CA.png"><br>
+                    <a href="https://osu.ppy.sh/users/8240995" target="_blank">Joryan_Inkling</a>
                 </div>
-                <div class="item">5 - 3</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Quarterfinals</div>
-                <div class="item">WeHatePP</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/13287997">[Dom]</a> | 
-                    <a href="https://osu.ppy.sh/users/15922752">kvictor</a> | 
-                    <a href="https://osu.ppy.sh/users/15262671">monopl1</a> | 
-                    <a href="https://osu.ppy.sh/users/11475881">ssbmPepperJack</a>
+            </div><div class="match-history" id="bqt2">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 64</td>
+                        <td><b>Free Player Team 3</b><br>
+                            <a href="https://osu.ppy.sh/users/15867452" target="_blank">dnialh</a> | 
+                            <a href="https://osu.ppy.sh/users/16593954" target="_blank">JoeyUwu</a>
+                        </td>
+                        <td>4 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><b>Tricotisen</b><br>
+                            <a href="https://osu.ppy.sh/users/10996443" target="_blank">SverdWyrd</a> | 
+                            <a href="https://osu.ppy.sh/users/11617067" target="_blank">Maximalic</a> | 
+                            <a href="https://osu.ppy.sh/users/15219106" target="_blank">DYSONV8ABSOLUTE</a>
+                        </td>
+                        <td>4 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Round of 16</td>
+                        <td><b>Missing Jumper RE</b><br>
+                            <a href="https://osu.ppy.sh/users/15518219" target="_blank">Kocha</a> | 
+                            <a href="https://osu.ppy.sh/users/7173963" target="_blank">Sanduha</a> | 
+                            <a href="https://osu.ppy.sh/users/10872666" target="_blank">Iromata</a>
+                        </td>
+                        <td>5 - 4</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Quarterfinals 1</td>
+                        <td><b>The pog squad</b><br>
+                            <a href="https://osu.ppy.sh/users/14486437" target="_blank">xtxa</a> | 
+                            <a href="https://osu.ppy.sh/users/14697881" target="_blank">uwumeguminuwu</a> | 
+                            <a href="https://osu.ppy.sh/users/13716742" target="_blank">Shinako</a>
+                        </td>
+                        <td>6 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Quarterfinals 2</td>
+                        <td><b>To Be Determined</b><br>
+                            <a href="https://osu.ppy.sh/users/15747555" target="_blank">HippoFalcon</a> | 
+                            <a href="https://osu.ppy.sh/users/4010492" target="_blank">Nazodude</a> | 
+                            <a href="https://osu.ppy.sh/users/14410774" target="_blank">TrueGaytorade</a>
+                        </td>
+                        <td>6 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 1</td>
+                        <td><b>Hall 1</b><br>
+                            <a href="https://osu.ppy.sh/users/3218675" target="_blank">Egor20042004</a> | 
+                            <a href="https://osu.ppy.sh/users/7806547" target="_blank">Lord_MaXXiM</a> | 
+                            <a href="https://osu.ppy.sh/users/11438067" target="_blank">abvvvv</a>
+                        </td>
+                        <td>6 - 3</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 2</td>
+                        <td><b>-_-</b><br>
+                            <a href="https://osu.ppy.sh/users/16052525" target="_blank">Geag</a> | 
+                            <a href="https://osu.ppy.sh/users/12835025" target="_blank">txFPS</a> | 
+                            <a href="https://osu.ppy.sh/users/14681304" target="_blank">MokaMilku</a>
+                        </td>
+                        <td>6 - 2</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Loser Finals 1</td>
+                        <td><b>Missing Jumper RE</b><br>
+                            <a href="https://osu.ppy.sh/users/15518219" target="_blank">Kocha</a> | 
+                            <a href="https://osu.ppy.sh/users/7173963" target="_blank">Sanduha</a> | 
+                            <a href="https://osu.ppy.sh/users/10872666" target="_blank">Iromata</a>
+                        </td>
+                        <td>7 - 3</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--STK8-->
+            <div class="tournament" style="background-image: url('assets/banners/stk8.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1139956" target="_blank">STK8</a></div>
+                <div class="placement"><a href="https://challonge.com/STK8" target="_blank">Top 12</a></div>
+                <div class="blank2"></div>
+                <div class="date">Sep 06, 2020</div>
+                <div class="rank-range">80k - 150k</div>
+                <div class="format1">2v2</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">60 Teams</div>
+                <div class="seed">Best of group L</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="stk8-b">+</button></div>
+            </div><div class="extension-2t">
+                <div class="team-name">Totally Not Derankers</div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a>
                 </div>
-                <div class="item">6 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--SF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 1</div>
-                <div class="item">Asia-Pacific</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15197150">forgestrange</a> | 
-                    <a href="https://osu.ppy.sh/users/14065788">ketthesylveon</a> | 
-                    <a href="https://osu.ppy.sh/users/5305199">Tree-Kangaroo</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/CA.png"><br>
+                    <a href="https://osu.ppy.sh/users/8240995" target="_blank">Joryan_Inkling</a>
                 </div>
-                <div class="item">6 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF2-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 2</div>
-                <div class="item">Chuchichäschtli</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/6454830">[ Arikawa ]</a> | 
-                    <a href="https://osu.ppy.sh/users/6675144">[ Kuromei ]</a> | 
-                    <a href="https://osu.ppy.sh/users/6228912">Kvn_hot_potato</a>
+            </div><div class="match-history" id="stk8">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Group Stage 1</td>
+                        <td><b>Phantom Strikers</b><br>
+                            <a href="https://osu.ppy.sh/users/14093519" target="_blank">MrNoLife</a> | 
+                            <a href="https://osu.ppy.sh/users/15428357" target="_blank">Defy</a> | 
+                            <a href="https://osu.ppy.sh/users/4426672" target="_blank">iiTzTony</a>
+                        </td>
+                        <td>5 - 3</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Group Stage 2</td>
+                        <td><b>MOPA</b><br>
+                            <a href="https://osu.ppy.sh/users/16434368" target="_blank">mihawkx</a> | 
+                            <a href="https://osu.ppy.sh/users/12617514" target="_blank">PiquitoBr</a> | 
+                            <a href="https://osu.ppy.sh/users/10735077" target="_blank">Hayhorn</a>
+                        </td>
+                        <td>5 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><b>JP2GMD</b><br>
+                            <a href="https://osu.ppy.sh/users/14285991" target="_blank">KubusOwO</a> | 
+                            <a href="https://osu.ppy.sh/users/16310132" target="_blank">Karmelowsky</a>
+                        </td>
+                        <td>5 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Round of 16</td>
+                        <td><b>Team Borger</b><br>
+                            <a href="https://osu.ppy.sh/users/2887386" target="_blank">Sakubus</a> | 
+                            <a href="https://osu.ppy.sh/users/9098192" target="_blank">Fluxey</a> | 
+                            <a href="https://osu.ppy.sh/users/13896734" target="_blank">gamecool147</a>
+                        </td>
+                        <td>5 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Quarterfinals 1</td>
+                        <td><b>a</b><br>
+                            <a href="https://osu.ppy.sh/users/15556259" target="_blank">uzadabegora</a> | 
+                            <a href="https://osu.ppy.sh/users/15492424" target="_blank">QuixTV</a> | 
+                            <a href="https://osu.ppy.sh/users/16652552" target="_blank">king_duckling</a>
+                        </td>
+                        <td>6 - 5</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Loser Quarterfinals 2</td>
+                        <td><b>macdonal burger</b><br>
+                            <a href="https://osu.ppy.sh/users/14926256" target="_blank">fseeb</a> | 
+                            <a href="https://osu.ppy.sh/users/13567003" target="_blank">FLLFF</a> | 
+                            <a href="https://osu.ppy.sh/users/14217340" target="_blank">Aletheia_Nyx</a>
+                        </td>
+                        <td>6 - 5</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--OTVT-->
+            <div class="tournament" style="background-image: url('assets/banners/otvt.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1120107" target="_blank">Oddie's TV Size Tournament</a></div>
+                <div class="placement"><a href="https://challonge.com/ux6hpeu7" target="_blank">Top 32</a></div>
+                <div class="blank2"></div>
+                <div class="date">Aug 05, 2020</div>
+                <div class="rank-range">100k - 999k</div>
+                <div class="format1">1v1</div>
+                <div class="format2">Single Elimination</div>
+                <div class="player-count">188 Players</div>
+                <div class="seed">Seeded 8th</div>
+                <div class="blank2"></div>
+                <div class="view-more"><button type="button" id="otvt-b">+</button></div>
+            </div><div class="match-history" id="otvt">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 128</td>
+                        <td><a href="https://osu.ppy.sh/users/13748814" target="_blank">ZedTronex</a></td>
+                        <td>4 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 64</td>
+                        <td><a href="https://osu.ppy.sh/users/13347736" target="_blank">T-Bounce</a></td>
+                        <td>4 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Round of 32</td>
+                        <td><a href="https://osu.ppy.sh/users/13347736" target="_blank">DevilmanAkira</a></td>
+                        <td>0 - FF</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--OLRT2-->
+            <div class="tournament" style="background-image: url('assets/banners/olrt2.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1111565" target="_blank">osu! Low rank Tournament 2</a></div>
+                <div class="placement"><a href="https://challonge.com/9ijnmf1x" target="_blank">Top 10</a></div>
+                <div class="blank2"></div>
+                <div class="date">Jul 23, 2020</div>
+                <div class="rank-range">100k - 350k</div>
+                <div class="format1">4v4</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">44 Teams</div>
+                <div class="seed">Seeded 9th</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="olrt2-b">+</button></div>
+            </div><div class="extension-5t">
+                <div class="team-name">No Skill</div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/DE.png"><br>
+                    <a href="https://osu.ppy.sh/users/15676464" target="_blank">chrissi</a></div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/RU.png"><br>
+                    <a href="https://osu.ppy.sh/users/12420508" target="_blank">JesusWCS</a>
                 </div>
-                <div class="item">6 - 5</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F1-->
-            <div class="m-row">
-                <div class="item-match">Loser Finals 1</div>
-                <div class="item">Young Builders</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/13808132">bu1ld</a> | 
-                    <a href="https://osu.ppy.sh/users/12420508">JesusWCS</a> | 
-                    <a href="https://osu.ppy.sh/users/13217621">Tara_kan</a> | 
-                    <a href="https://osu.ppy.sh/users/11268782">Togipy</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/DE.png"><br>
+                    <a href="https://osu.ppy.sh/users/14967328" target="_blank">Mysteri04</a>
                 </div>
-                <div class="item">7 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--OLRT2-->
-        <div class="m-row" id="olrt2">
-            <div class="tourney">Osu! Low Rank Tournament 2</div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="item">#FightingDucks</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/16182877">HELENKILLER1337</a> | 
-                    <a href="https://osu.ppy.sh/users/14579505">Syr00xxX</a> | 
-                    <a href="https://osu.ppy.sh/users/10386976">krkjulian</a> | 
-                    <a href="https://osu.ppy.sh/users/3017638">finatic2112</a> | 
-                    <a href="https://osu.ppy.sh/users/14579505">Syr00xxX</a> | 
-                    <a href="https://osu.ppy.sh/users/11422688">Xushey</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/GB.png"><br>
+                    <a href="https://osu.ppy.sh/users/16229987" target="_blank">r6echo14</a>
                 </div>
-                <div class="item">4 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="item">Intermediate Momentum Retreat</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/12074072">hersheycactus</a> | 
-                    <a href="https://osu.ppy.sh/users/12521528">Malishiosu</a> | 
-                    <a href="https://osu.ppy.sh/users/13818863">AstrZt</a> | 
-                    <a href="https://osu.ppy.sh/users/13120453">RFP12</a> |  
-                    <a href="https://osu.ppy.sh/users/2356133">Waterperson4</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/12056779" target="_blank">Serlum</a>
                 </div>
-                <div class="item">0 - FF</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Quarterfinals</div>
-                <div class="item">twitter.com/NM1hater</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/3548020">Nannner</a> | 
-                    <a href="https://osu.ppy.sh/users/12420214">battleof3</a> | 
-                    <a href="https://osu.ppy.sh/users/11386358">Charmory</a> | 
-                    <a href="https://osu.ppy.sh/users/11984807">Signify</a> |  
-                    <a href="https://osu.ppy.sh/users/8589763">A secret</a> | 
-                    <a href="https://osu.ppy.sh/users/17091856">JigglingJerome</a>
+            </div><div class="match-history" id="olrt2">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><b>#FightingDucks</b><br>
+                            <a href="https://osu.ppy.sh/users/16182877" target="_blank">HELENKILLER1337</a> | 
+                            <a href="https://osu.ppy.sh/users/14579505" target="_blank">Syr00xxX</a> | 
+                            <a href="https://osu.ppy.sh/users/10386976" target="_blank">krkjulian</a> | 
+                            <a href="https://osu.ppy.sh/users/3017638" target="_blank">finatic2112</a> | 
+                            <a href="https://osu.ppy.sh/users/11422688" target="_blank">Xushey</a>
+                        </td>
+                        <td>4 - 1</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 16</td>
+                        <td><b>Intermediate Momentum Retreat</b><br>
+                            <a href="https://osu.ppy.sh/users/12074072" target="_blank">hersheycactus</a> | 
+                            <a href="https://osu.ppy.sh/users/12521528" target="_blank">Malishiosu</a> | 
+                            <a href="https://osu.ppy.sh/users/13818863" target="_blank">AstrZt</a> | 
+                            <a href="https://osu.ppy.sh/users/13120453" target="_blank">RFP12</a> | 
+                            <a href="https://osu.ppy.sh/users/2356133" target="_blank">Waterperson4</a>
+                        </td>
+                        <td>0 - FF</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Quarterfinals</td>
+                        <td><b>twitter.com/NM1hater</b><br>
+                            <a href="https://osu.ppy.sh/users/3548020" target="_blank">Nannner</a> | 
+                            <a href="https://osu.ppy.sh/users/12420214" target="_blank">battleof3</a> | 
+                            <a href="https://osu.ppy.sh/users/11386358" target="_blank">Charmory</a> | 
+                            <a href="https://osu.ppy.sh/users/11984807" target="_blank">Signify</a> | 
+                            <a href="https://osu.ppy.sh/users/8589763" target="_blank">A secret</a> | 
+                            <a href="https://osu.ppy.sh/users/17091856" target="_blank">JigglingJerome</a>
+                        </td>
+                        <td>6 - 1</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Loser Semifinals 1</td>
+                        <td><b>Harumachi Clover</b><br>
+                            <a href="https://osu.ppy.sh/users/14356517" target="_blank">Mashyuf</a> | 
+                            <a href="https://osu.ppy.sh/users/6203507" target="_blank">shineasone</a> | 
+                            <a href="https://osu.ppy.sh/users/12754827" target="_blank">Chugga444</a> | 
+                            <a href="https://osu.ppy.sh/users/8295497" target="_blank">Lapisz</a> |  
+                            <a href="https://osu.ppy.sh/users/11861720" target="_blank">bluezenither</a> | 
+                            <a href="https://osu.ppy.sh/users/11550427" target="_blank">RioAl</a>
+                        </td>
+                        <td>6 - 0</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--NPC2-->
+            <div class="tournament" style="background-image: url('assets/banners/npc2.png');">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1051009" target="_blank">Non-Professional Cup 2</a></div>
+                <div class="placement"><a href="https://challonge.com/wne60mu5" target="_blank">Top 6</a></div>
+                <div class="blank2"></div>
+                <div class="date">Apr 12, 2020</div>
+                <div class="rank-range">150k - 250k</div>
+                <div class="format1">2v2</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">44 Teams</div>
+                <div class="seed">Seeded 6th</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="npc2-b">+</button></div>
+            </div><div class="extension-3t">
+                <div class="team-name">Fashionably Late</div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/11740481" target="_blank">Dream10</a></div>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a>
                 </div>
-                <div class="item">6 - 1</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--SF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 1</div>
-                <div class="item">Harumachi Clover</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/14356517">Mashyuf</a> | 
-                    <a href="https://osu.ppy.sh/users/6203507">shineasone</a> | 
-                    <a href="https://osu.ppy.sh/users/12754827">Chugga444</a> | 
-                    <a href="https://osu.ppy.sh/users/8295497">Lapisz</a> |  
-                    <a href="https://osu.ppy.sh/users/11861720">bluezenither</a> | 
-                    <a href="https://osu.ppy.sh/users/11550427">RioAl</a>
+                <div class="teammate">
+                    <img class="country-flag" src="https://osu.ppy.sh/images/flags/US.png"><br>
+                    <a href="https://osu.ppy.sh/users/12056779" target="_blank">Serlum</a>
                 </div>
-                <div class="item">6 - 0</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--OTVT-->
-        <div class="m-row" id="otvt">
-            <div class="tourney">Oddie's TV Size Tournament</div>
-            <!--RO128-->
-            <div class="m-row">
-                <div class="item-match">Round of 128</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13748814">ZedTronex</a>
-                </div>
-                    <div class="item">4 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO64-->
-            <div class="m-row">
-                <div class="item-match">Round of 64</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13347736">T-Bounce</a>
-                </div>
-                    <div class="item">4 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/15103117">DevilmanAkira</a>
-                </div>
-                    <div class="item">0 - FF</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--STK8-->
-        <div class="m-row" id="stk8">
-            <div class="tourney">STK8</div>
-            <!--GS1-->
-            <div class="m-row">
-                <div class="item-match">Group Stage 1</div>
-                <div class="item">Phantom Strikers</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/14093519">MrNoLife</a> | 
-                    <a href="https://osu.ppy.sh/users/15428357">Defy</a> | 
-                    <a href="https://osu.ppy.sh/users/4426672">iiTzTony</a>
-                </div>
-                <div class="item">5 - 3</div>
-                <div class="won">Won</div>
-            </div>
-            <!--GS2-->
-            <div class="m-row">
-                <div class="item-match">Group Stage 2</div>
-                <div class="item">MOPA</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/16434368">mihawkx</a> | 
-                    <a href="https://osu.ppy.sh/users/12617514">PiquitoBr</a> | 
-                    <a href="https://osu.ppy.sh/users/10735077">Hayhorn</a>
-                </div>
-                <div class="item">5 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="item">JP2GMD</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/14285991">KubusOwO</a> | 
-                    <a href="https://osu.ppy.sh/users/16310132">Karmelowsky</a>
-                </div>
-                <div class="item">5 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="item">Team Borger</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/2887386">Sakubus</a> | 
-                    <a href="https://osu.ppy.sh/users/9098192">Fluxey</a> | 
-                    <a href="https://osu.ppy.sh/users/13896734">gamecool147</a>
-                </div>
-                <div class="item">5 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--QF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Quarterfinals 1</div>
-                <div class="item">a</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15556259">uzadabegora</a> | 
-                    <a href="https://osu.ppy.sh/users/15492424">QuixTV</a> | 
-                    <a href="https://osu.ppy.sh/users/16652552">king_duckling</a>
-                </div>
-                <div class="item">6 - 5</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF2-->
-            <div class="m-row">
-                <div class="item-match">Loser Quarterfinals 2</div>
-                <div class="item">macdonal burger</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/14926256">fseeb</a> | 
-                    <a href="https://osu.ppy.sh/users/13567003">FLLFF</a> | 
-                    <a href="https://osu.ppy.sh/users/14217340">Aletheia_Nyx</a>
-                </div>
-                <div class="item">6 - 5</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--BQT2-->
-        <div class="m-row" id="bqt2">
-            <div class="tourney">BQT2</div>
-            <!--RO64-->
-            <div class="m-row">
-                <div class="item-match">Round of 64</div>
-                <div class="item">Free Player Team 3</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15867452">dnialh</a> | 
-                    <a href="https://osu.ppy.sh/users/16593954">JoeyUwu</a>
-                </div>
-                <div class="item">4 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="item">Tricotisen</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/10996443">SverdWyrd</a> | 
-                    <a href="https://osu.ppy.sh/users/11617067">Maximalic</a> |
-                    <a href="https://osu.ppy.sh/users/15219106">DYSONV8ABSOLUTE</a>
-                </div>
-                <div class="item">4 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="item">Missing Jumper RE</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15518219">Kocha</a> | 
-                    <a href="https://osu.ppy.sh/users/7173963">Sanduha</a> |
-                    <a href="https://osu.ppy.sh/users/10872666">Iromata</a>
-                </div>
-                <div class="item">5 - 4</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--QF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Quarterfinals 1</div>
-                <div class="item">The pog squad</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/14486437">xtxa</a> | 
-                    <a href="https://osu.ppy.sh/users/14697881">uwumeguminuwu</a> |
-                    <a href="https://osu.ppy.sh/users/13716742">Shinako</a>
-                </div>
-                <div class="item">6 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF2-->
-            <div class="m-row">
-                <div class="item-match">Loser Quarterfinals 2</div>
-                <div class="item">To Be Determined</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15747555">HippoFalcon</a> | 
-                    <a href="https://osu.ppy.sh/users/4010492">Nazodude</a> |
-                    <a href="https://osu.ppy.sh/users/14410774">TrueGaytorade</a>
-                </div>
-                <div class="item">6 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 1</div>
-                <div class="item">Hall 1</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/3218675">Egor20042004</a> | 
-                    <a href="https://osu.ppy.sh/users/7806547">Lord_MaXXiM</a> |
-                    <a href="https://osu.ppy.sh/users/11438067">abvvvv</a>
-                </div>
-                <div class="item">6 - 3</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF2-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 2</div>
-                <div class="item">-_-</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/16052525">Geag</a> | 
-                    <a href="https://osu.ppy.sh/users/12835025">txFPS</a> |
-                    <a href="https://osu.ppy.sh/users/14681304">MokaMilku</a>
-                </div>
-                <div class="item">6 - 2</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F1-->
-            <div class="m-row">
-                <div class="item-match">Loser Finals 1</div>
-                <div class="item">Missing Jumper RE</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/15518219">Kocha</a> | 
-                    <a href="https://osu.ppy.sh/users/7173963">Sanduha</a> |
-                    <a href="https://osu.ppy.sh/users/10872666">Iromata</a>
-                </div>
-                <div class="item">7 - 3</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--BNC-->
-        <div class="m-row" id="bnc">
-            <div class="tourney">Banny Cup</div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/12176990">PanzersIV</a>
-                </div>
-                    <div class="item">5 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Loser Quarterfinals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/14270286">Shiro4102</a>
-                </div>
-                    <div class="item">5 - 2</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF1-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 1</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13741233">Hayuraaa</a>
-                </div>
-                    <div class="item">6 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF2-->
-            <div class="m-row">
-                <div class="item-match">Loser Semifinals 2</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/14610323">DarkeDiamonds</a>
-                </div>
-                    <div class="item">6 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F1-->
-            <div class="m-row">
-                <div class="item-match">Loser Finals 1</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13644465">Suika7</a>
-                </div>
-                    <div class="item">0 - FF</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F2-->
-            <div class="m-row">
-                <div class="item-match">Loser Finals 2</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/8650585">bannynino</a>
-                </div>
-                    <div class="item">6 - 0</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--OST(Nov/Dec)-->
-        <div class="m-row" id="ost">
-            <div class="tourney">Orange's Scuffed Tournament (Nov/Dec)</div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/10863898">EzEveryTime</a>
-                </div>
-                    <div class="item">4 - 2</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/10287120">Tonatious</a>
-                </div>
-                    <div class="item">5 - 3</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--AWT-->
-        <div class="m-row" id="awt">
-            <div class="tourney">Aeris Winter Tournament 2020</div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="item">Rojak</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/11627196">lewis_0873</a> | 
-                    <a href="https://osu.ppy.sh/users/12629272">Xavernus</a> |
-                    <a href="https://osu.ppy.sh/users/3191010">Andy26</a> |
-                    <a href="https://osu.ppy.sh/users/13347736">T-Bounce</a>
-                </div>
-                <div class="item">4 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Quarterfinals</div>
-                <div class="item">Memory Snow</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/10287120">Tonatious</a> | 
-                    <a href="https://osu.ppy.sh/users/15452931">Madison Beer</a> |
-                    <a href="https://osu.ppy.sh/users/10766611">NekoMeganG</a> |
-                    <a href="https://osu.ppy.sh/users/8173495">WackyFlo</a>
-                </div>
-                <div class="item">5 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF-->
-            <div class="m-row">
-                <div class="item-match">Semifinals</div>
-                <div class="item">A side of noob</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/13179722">unicornlover</a> | 
-                    <a href="https://osu.ppy.sh/users/1013605">ScarletSisters</a> |
-                    <a href="https://osu.ppy.sh/users/7538431">Vagrant</a> |
-                    <a href="https://osu.ppy.sh/users/7452074">Shark</a>
-                </div>
-                <div class="item">5 - 3</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--BM-->
-            <div class="m-row">
-                <div class="item-match">Bronze Match</div>
-                <div class="item">idk dude</div>
-                <div class="item">
-                    <a href="https://osu.ppy.sh/users/12404726">EternalDawn</a> | 
-                    <a href="https://osu.ppy.sh/users/9370167">Naviless</a> |
-                    <a href="https://osu.ppy.sh/users/14687489">Dylann</a> |
-                    <a href="https://osu.ppy.sh/users/10319851">SSScotty</a>
-                </div>
-                <div class="item">6 - 1</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        <!--LF6DC-->
-        <div class="m-row" id="lf6dc">
-            <div class="tourney">Lolis Fantasy 6 Digits Cup</div>
-            <!--RO32-->
-            <div class="m-row">
-                <div class="item-match">Round of 32</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/14868720">ALDHACAST</a>
-                </div>
-                    <div class="item">5 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--RO16-->
-            <div class="m-row">
-                <div class="item-match">Round of 16</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/4267947">Linkel</a>
-                </div>
-                    <div class="item">5 - 0</div>
-                <div class="won">Won</div>
-            </div>
-            <!--QF-->
-            <div class="m-row">
-                <div class="item-match">Quarterfinals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/9214489">Robertelio12</a>
-                </div>
-                    <div class="item">5 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--SF-->
-            <div class="m-row">
-                <div class="item-match">Semifinals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/11364009">Alonso2903</a>
-                </div>
-                    <div class="item">6 - 5</div>
-                <div class="won">Won</div>
-            </div>
-            <!--F-->
-            <div class="m-row">
-                <div class="item-match">Finals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/13398045">GarciXD</a>
-                </div>
-                    <div class="item">7 - 1</div>
-                <div class="won">Won</div>
-            </div>
-            <!--GF-->
-            <div class="m-row">
-                <div class="item-match">Grand Finals</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/11364009">Alonso2903</a>
-                </div>
-                    <div class="item">7 - 2</div>
-                <div class="lost">Lost</div>
-            </div>
-            <!--BR-->
-            <div class="m-row">
-                <div class="item-match">Bracket Reset</div>
-                <div class="m-solo">
-                    <a href="https://osu.ppy.sh/users/11364009">Alonso2903</a>
-                </div>
-                    <div class="item">7 - 3</div>
-                <div class="lost">Lost</div>
-            </div>
-        </div>
-        </div>
-        <div style="padding: 1.2em 1.8em;">
-        <h2 id="match-count"></h2>
-        <h3 id="match-win-count"></h3>
-        <h3 id="match-loss-count"></h3>
-        <p>
-            <strong>Note:</strong> These stats are only counted from finished tournaments.
-        </p>
+            </div><div class="match-history" id="npc2">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><b>Mouse Drift</b><br>
+                            <a href="https://osu.ppy.sh/users/16545385" target="_blank">Himeno_-</a> | 
+                            <a href="https://osu.ppy.sh/users/12582103" target="_blank">Kleemann</a>
+                        </td>
+                        <td>5 - 2</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 16</td>
+                        <td><b>Oota e-gamers</b><br>
+                            <a href="https://osu.ppy.sh/users/6169550" target="_blank">bud64</a> | 
+                            <a href="https://osu.ppy.sh/users/9036973" target="_blank">FornariLoL</a> | 
+                            <a href="https://osu.ppy.sh/users/12220691" target="_blank">pecefulpro</a>
+                        </td>
+                        <td>5 - 3</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Quarterfinals</td>
+                        <td><b>WeHatePP</b><br>
+                            <a href="https://osu.ppy.sh/users/13287997" target="_blank">[Dom]</a> | 
+                            <a href="https://osu.ppy.sh/users/15922752" target="_blank">kvictor</a> | 
+                            <a href="https://osu.ppy.sh/users/15262671" target="_blank">monopl1</a> | 
+                            <a href="https://osu.ppy.sh/users/11475881" target="_blank">ssbmPepperJack</a>
+                        </td>
+                        <td>6 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 1</td>
+                        <td><b>Asia-Pacific</b><br>
+                            <a href="https://osu.ppy.sh/users/15197150" target="_blank">forgestrange</a> | 
+                            <a href="https://osu.ppy.sh/users/14065788" target="_blank">ketthesylveon</a> | 
+                            <a href="https://osu.ppy.sh/users/5305199" target="_blank">Tree-Kangaroo</a>
+                        </td>
+                        <td>6 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Loser Semifinals 2</td>
+                        <td><b>Chuchichäschtli</b><br>
+                            <a href="https://osu.ppy.sh/users/6454830" target="_blank">[ Arikawa ]</a> | 
+                            <a href="https://osu.ppy.sh/users/6675144" target="_blank">[ Kuromei ]</a> | 
+                            <a href="https://osu.ppy.sh/users/6228912"> target="_blank"Kvn_hot_potato</a>
+                        </td>
+                        <td>6 - 5</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-l">Loser Finals 1</td>
+                        <td><b>Young Builders</b><br>
+                            <a href="https://osu.ppy.sh/users/13808132" target="_blank">bu1ld</a> | 
+                            <a href="https://osu.ppy.sh/users/12420508" target="_blank">JesusWCS</a> | 
+                            <a href="https://osu.ppy.sh/users/13217621" target="_blank">Tara_kan</a> | 
+                            <a href="https://osu.ppy.sh/users/11268782" target="_blank">togipy</a>
+                        </td>
+                        <td>7 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--OLRT-->
+            <div class="tournament">
+                <div class="tournament-name"><a href="https://osu.ppy.sh/community/forums/topics/1026857" target="_blank">osu! Low rank Tournament</a></div>
+                <div class="placement-1st"><a href="https://challonge.com/ftbess33" target="_blank">1st Place</a></div>
+                <div class="blank2"></div>
+                <div class="date">Feb 27, 2020</div>
+                <div class="rank-range">200k - 400k</div>
+                <div class="format1">1v1</div>
+                <div class="format2">Double Elimination</div>
+                <div class="player-count">32 Players</div>
+                <div class="seed">Seeded 1st</div>
+                <div class="blank3"></div>
+                <div class="view-more"><button type="button" id="olrt-b">+</button></div>
+            </div><div class="match-history" id="olrt">
+                <p>Match History</p>
+                <table class="history">
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                    <tr>
+                        <th>Stage</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Outcome</th>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 32</td>
+                        <td><a href="https://osu.ppy.sh/users/12143973" target="_blank">HugFestOOOOO</a></td>
+                        <td>0 - FF</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Round of 16</td>
+                        <td><a href="https://osu.ppy.sh/users/15518219" target="_blank">Kocha</a></td>
+                        <td>4 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Quarterfinals</td>
+                        <td><a href="https://osu.ppy.sh/users/15240084" target="_blank">X_boi_X</a></td>
+                        <td>5 - 0</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Semifinals</td>
+                        <td><a href="https://osu.ppy.sh/users/9653206" target="_blank">FourFifty</a></td>
+                        <td>6 - 3</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr>
+                        <td class="match-w">Finals</td>
+                        <td><a href="https://osu.ppy.sh/users/13743386" target="_blank">Necroplex</a></td>
+                        <td>6 - 3</td>
+                        <td>Victory</td>
+                    </tr>
+                    <tr class="match-l">
+                        <td>Grand Finals</td>
+                        <td><a href="https://osu.ppy.sh/users/13743386" target="_blank">Necroplex</a></td>
+                        <td>7 - 2</td>
+                        <td>Defeat</td>
+                    </tr>
+                    <tr class="match-w">
+                        <td>Bracket Reset</td>
+                        <td><a href="https://osu.ppy.sh/users/13743386" target="_blank">Necroplex</a></td>
+                        <td>7 - 5</td>
+                        <td>Victory</td>
+                    </tr>
+                </table>
+            </div><br>
         </div>
     </div>
 </body>

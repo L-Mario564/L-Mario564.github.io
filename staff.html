@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario564's Tournament History</title>
+    <title>Staff History</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/staff.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="javascript/main.js"></script>
-    <script src="javascript/staff-counting.js"></script>
+    <script src="javascript/staff.js"></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
-        <img class="other" src="assets/icons/favicon.png" width="40" height="40">
+        <img class="other" src="assets/icons/trophy.png" width="40" height="40">
         <a class="inactive" href="index.html">Home</a>
         <a class="inactive" href="player.html">Player History</a>
         <a class="active" href="staff.html">Staff History</a>
@@ -29,54 +30,80 @@
         <div style="padding: 1.2em 1.8em; text-align: center;">
         <h1>Staff History</h1>
         <p>
-            All the tournaments I've staffed in and the roles I've played in them.
+            All the tournaments I've staffed in, and the roles I've played in them.<br>
+            If you're seeking for staff for your tourney then feel free to ask for help from me (just keep in mind that I'll decline or accept as I feel like).
         </p>
-        <h2>Overview</h2>
-        <h3 id="staff-count"></h3>
+        </div><br>
+        <div style="text-align: center;">
+            <table class="roles">
+                <col class="roles-col1">
+                <col class="roles-col2">
+                <tr>
+                    <th>Roles</th>
+                    <th>Times staffed</th>
+                </tr>
+                <tr>
+                    <td>Referee</td>
+                    <td id="ref">0</td>
+                </tr>
+                <tr>
+                    <td>Mappooler</td>
+                    <td id="pooler">0</td>
+                </tr>
+                <tr>
+                    <td>Commentator</td>
+                    <td id="comm">0</td>
+                </tr>
+                <tr>
+                    <td>Streamer</td>
+                    <td id="streamer">0</td>
+                </tr>
+                <tr>
+                    <td>Spreadsheeter</td>
+                    <td id="sheeter">0</td>
+                </tr>
+                <tr>
+                    <td>GFX Designer</td>
+                    <td id="gfx">0</td>
+                </tr>
+            </table><br><br><br><br>
+            <table class="staff-history">
+                <col class="staff-history-col1">
+                <col class="staff-history-col2">
+                <col class="staff-history-col3">
+                <tr>
+                    <th>Tournament name</th>
+                    <th>Date</th>
+                    <th>Staffed as</th>
+                </tr>
+                <!--TC-->
+                <tr>
+                    <td><a href="https://osu.ppy.sh/community/forums/topics/1222027">Tomori Cup</a></td>
+                    <td>Jan 10, 2021</td>
+                    <td>
+                        <div class="ref">Referee</div>
+                    </td>
+                </tr>
+                <!--PDN-->
+                <tr>
+                    <td><a href="https://osu.ppy.sh/community/forums/topics/1239289">Pas De Nom</a></td>
+                    <td>Feb 01, 2021</td>
+                    <td>
+                        <div class="ref">Referee</div>
+                        <div class="sheeter" style="padding-top: 0.3em;">Spreadsheeter</div>
+                        <div class="gfx" style="padding-top: 0.3em;">GFX Designer</div>
+                    </td>
+                </tr>
+                <!--OT-->
+                <tr>
+                    <td>oldsu! Tournament</td>
+                    <td>Feb 22, 2021</td>
+                    <td>
+                        <div class="sheeter">Spreadsheeter</div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div id="overview">
-        <div id="role"><b>Roles</b></div>
-        <div id="ref"><b>Referee</b></div>
-        <div id="pooler"><b>Mappooler</b></div>
-        <div id="commentator"><b>Commentator</b></div>
-        <div id="streamer"><b>Streamer</b></div>
-        <div id="sheeter"><b>Spreadsheeter</b></div>
-        <div id="gfx"><b>GFX Designer</b></div>
-        <div id="sub-role">Times staffed</div>
-        <div id="sub-ref"></div>
-        <div id="sub-pooler"></div>
-        <div id="sub-commentator"></div>
-        <div id="sub-streamer"></div>
-        <div id="sub-sheeter"></div>
-        <div id="sub-gfx"></div>
-        </div>
-        <div style="padding: 1.2em 1.8em; text-align: center;">
-        <h2>Details</h2>
-        </div>
-        <div id="details">
-        <div class="header"><b>Tournament Name</b></div>
-        <div class="header"><b>Date</b></div>
-        <div class="header"><b>Forum Post</b></div>
-        <div class="header" id="header-role"><b>Role(s)</b></div>
-        <!--TC-->
-        <div class="s-row">
-            <div class="tourney">Tomori Cup</div>
-            <div class="date">01/10/2021</div>
-            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1222027" target="_blank">&#129149</a></div>
-            <div class="ref">Referee</div>
-            <div class="blank5"></div>
-        </div>
-        <!--PDN-->
-        <div class="s-row">
-            <div class="tourney">Pas De Nom</div>
-            <div class="date">02/01/2021</div>
-            <div class="forum"><a href="https://osu.ppy.sh/community/forums/topics/1239289" target="_blank">&#129149</a></div>
-            <div class="ref">Referee</div>
-            <div class="sheeter">Spreadsheeter</div>
-            <div class="gfx">GFX Designer</div>
-            <div class="blank3"></div>
-        </div>
-        </div>
-    </div>
+    </div><br><br>
 </body>
 </html>

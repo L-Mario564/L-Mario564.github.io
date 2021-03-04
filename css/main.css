@@ -50,23 +50,27 @@ button {
 .topnav .nav-icon {
     display: none;
     font-size: 1.25em;
+    height: 1em;
 }
 .topnav .nav-icon:hover {
     color: white;
 }
 @media screen and (max-width: 600px) {
-    .topnav a {display: none;}
+    .topnav a {
+        display: none;
+    }
     .topnav a.nav-icon {
     float: left;
     display: block;
     }
 }
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: fixed;}
     .topnav.responsive a.nav-icon {
       position: absolute;
       right: 0;
       top: 0;
+      position: fixed;
     }
     .topnav.responsive a, .topnav.responsive img {
       float: none;
@@ -113,18 +117,16 @@ button {
 .topnav-dropdown:hover .dropdown-button {
     color: white;
 }
-/* For the navigation bar to be "pinned" */
-
 /*return to profile button on index.html*/
 input {
-    background-color:rgb(60, 66, 72);
+    background-color:rgb(26, 32, 44);
     color: white;
     border-style: solid;
-    border-color: rgb(100, 106, 112);
+    border-color: rgb(0, 6, 12);
     width: 14.25em;
     height: 2.4em;
 }
 input:hover {
-    background-color: whitesmoke;
-    color: rgb(80, 86, 92);
+    background-color: rgba(26, 32, 44, 0.8);
+    color: rgb(255, 255, 255);
 }
