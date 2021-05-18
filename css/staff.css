@@ -31,10 +31,12 @@ td a:hover {
     margin-left: 10%;
     margin-right: 10%;
     border-collapse: collapse;
+    column-count: 3;
 }
 .staff-history-col1 {width: 45%;}
 .staff-history-col2 {width: 15%;}
 .staff-history-col3 {width: 40%;}
+
 /* Mobile interface (This one actually works well, nice) */
 @media screen and (max-width: 600px) {
     .roles {

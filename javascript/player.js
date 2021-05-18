@@ -21,6 +21,7 @@ $(function() {
 
   // Hides all "Match history" tables
   $('.match-history').hide();
+
   // Toggles the "Match history" table for each tournament
   $('#olrt-b').click(function(){$('#olrt').slideToggle(250);});
   $('#npc2-b').click(function(){$('#npc2').slideToggle(250);});
@@ -32,4 +33,7 @@ $(function() {
   $('#ost-b').click(function(){$('#ost').slideToggle(250);});
   $('#awt-b').click(function(){$('#awt').slideToggle(250);});
   $('#lf6dc-b').click(function(){$('#lf6dc').slideToggle(250);});
-});
+  $('#osdl-b').click(function(){$('#osdl').slideToggle(250);});
+  $('#jrc2-b').click(function(){$('#jrc2').slideToggle(250);});
+  $('#stk9-b').click(function(){$('#stk9').slideToggle(250);});
+})

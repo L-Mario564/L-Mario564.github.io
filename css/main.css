@@ -130,3 +130,26 @@ input:hover {
     background-color: rgba(26, 32, 44, 0.8);
     color: rgb(255, 255, 255);
 }
+
+/* Animations */
+.content {
+    animation-name: fade-in-content;
+    animation-duration: 0.7s;
+}
+@keyframes fade-in-content {
+    0% {
+        padding-top: 20em;
+        opacity: 0;
+    }
+    100% {opacity: 1;}
+}
+
+#topnav {
+    animation-name: fade-in-topnav;
+    animation-duration: 0.7s;
+    z-index: 2;
+}
+@keyframes fade-in-topnav {
+    0% {height: 0%;}
+    100% {height: 2.7em;}
+}
