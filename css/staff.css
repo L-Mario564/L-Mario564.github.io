@@ -17,33 +17,190 @@ td a:hover {
     color: rgba(0, 0, 0, 0.5);
 }
 /* Staff roles table */
-.roles {
+.overview {
     width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: auto;
+    margin-right: auto;
     border-collapse: collapse;
 }
-.roles-col1 {width: 65%;}
-.roles-col2 {width: 35%;}
-/* Staff history table */
-.staff-history {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-collapse: collapse;
-    column-count: 3;
+.overview-col1 {width: 65%;}
+.overview-col2 {width: 35%;}
+/* Sort menu */
+.sort-menu {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    width: 92%;
 }
-.staff-history-col1 {width: 45%;}
-.staff-history-col2 {width: 15%;}
-.staff-history-col3 {width: 40%;}
+.sort-submenu {
+    display: grid;
+    border-bottom: 0.2em solid rgb(0, 6, 12);
+    margin-right: 2em;
+}
+.sort-type {
+    font-size: 1.1em;
+    color: rgb(0, 6, 12);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
+.sort-option {
+    border: 0.2em solid rgb(0, 6, 12);
+    border-bottom: none;
+}
+.sort-option button {
+    width: auto;
+    color: rgb(0, 6, 12);
+    font-size: 0.95em;
+    width: 100%;
+    height: 100%;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+.sort-item-active { background-color: rgb(0, 6, 12); }
+.sort-item-active button {
+    color: white;
+    font-size: 0.95em;
+    width: 100%;
+    height: 100%;
+    padding: 0.3em 0.2em 0.3em 0.2em;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sort-by-date {
+    margin-bottom: 1.5em;
+    grid-template-columns: auto auto auto;
+}
+.sort-by-year {
+    margin-bottom: 1.5em;
+    grid-template-columns: auto auto auto;
+}
+.sort-by-role {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+/* Staff history div element */
+.tournament-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
+.tournament {
+    display: grid;
+    grid-template-columns: 68% 16% 16%;
+    grid-template-rows: 50% 50%;
+    border-style: solid;
+    border-color: rgba(0, 6, 12);
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 2em;
+    background-color: rgb(26, 32, 44);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tournament-name {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 72%;
+    font-weight: bold;
+    color: white;
+}
+.tournament-name a {
+    text-decoration: none;
+    color: white;
+}
+.tournament-name a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+.date, .rank-range, .format-1, .format-2 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40%;
+    color: white;
+}
+.roles {
+    display: grid;
+    border-style: solid;
+    border-color: rgba(0, 6, 12);
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 0.7em;
+    background-color: rgb(0, 6, 18);
+}
+.roles-1r { grid-template-columns: 100%; }
+.roles-2r { grid-template-columns: 50% 50%; }
+.roles-3r { grid-template-columns: 33.333% 33.334% 33.333%; }
+.roles-4r { grid-template-columns: 25% 25% 25% 25%; }
+.roles-5r { grid-template-columns: 20% 20% 20% 20%; }
+.roles-6r { grid-template-columns: 16.666% 16.667% 16.667% 16.667% 16.667% 16.666%; }
+.roles div {
+    color: white;
+    text-align: center;
+    font-size: 50%;
+}
 
 /* Mobile interface (This one actually works well, nice) */
 @media screen and (max-width: 600px) {
+    .overview { width: 92%; }
+    .sort-menu {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        width: 92%;
+    }
+    .sort-by-date {
+        margin-bottom: 1.5em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .sort-by-year {
+        margin-bottom: 1.5em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .sort-by-role {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-template-columns: auto auto auto;
+    }
+    #gfx-designer-only {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .tournament {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 25% 25%;
+        height: 5em;
+    }
+    .tournament-name {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
     .roles {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 95%;
+        font-size: 85%;
+    }
+    .roles-1r { grid-template-columns: 100%; }
+    .roles-2r { grid-template-columns: 50% 50%; }
+    .roles-3r, .roles-4r {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 0.7em 0.7em;
+    }
+    .roles-5r, .roles-6r {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 0.7em 0.7em 0.7em;
     }
     .staff-history {
         width: 90%;

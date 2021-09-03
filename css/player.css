@@ -21,7 +21,65 @@
     height: 60%;
     width: auto;
 }
+/* Sort menu */
+.sort-menu {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    width: 92%;
+}
+.sort-submenu {
+    display: grid;
+    border-bottom: 0.2em solid rgb(0, 6, 12);
+    margin-right: 2em;
+}
+.sort-type {
+    font-size: 1.1em;
+    color: rgb(0, 6, 12);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
+.sort-option {
+    border: 0.2em solid rgb(0, 6, 12);
+    border-bottom: none;
+}
+.sort-option button {
+    width: auto;
+    color: rgb(0, 6, 12);
+    font-size: 0.95em;
+    width: 100%;
+    height: 100%;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sort-item-active { background-color: rgb(0, 6, 12); }
+.sort-item-active button {
+    color: white;
+    font-size: 0.95em;
+    width: 100%;
+    height: 100%;
+    padding: 0.3em 0.2em 0.3em 0.2em;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sort-by-date {
+    margin-bottom: 1.5em;
+    grid-template-columns: auto auto auto;
+}
+.sort-by-year {
+    margin-bottom: 1.5em;
+    grid-template-columns: auto auto auto auto;
+}
+.sort-by-placement { grid-template-columns: auto auto auto; }
+.sort-by-tournament-type { grid-template-columns: auto auto auto auto; }
 /* Player history div element */
+.tournament-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
 .tournament {
     display: grid;
     grid-template-columns: 2% 13% 13% 9% 19% 13% 2% 12% 12% 5%;
@@ -68,11 +126,11 @@
 .placement a:hover, .placement-1st a:hover, .placement-2nd a:hover, .placement-3rd a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
-.seed {
+.seeding {
     grid-column-start: 7;
     grid-column-end: 9;
 }
-.date, .rank-range, .format1, .format2, .player-count, .view-more,  .seed {
+.date, .rank-range, .format-1, .format-2, .participant-count, .view-more,  .seeding {
     text-align: center;
     padding-top: 0.5em;
     font-size: 40%;
@@ -125,11 +183,12 @@
     color: white;
     text-align: center;
 }
-.country-flag {
-    height: 25%;
+.teammate .country-flag {
+    height: 32%;
 }
 /* Button to toggle match history table*/
 button {
+    width: 1.5em;
     background-color: rgba(255, 255, 255, 1);
     color: rgb(0, 6, 18);
     font-size: 120%;
@@ -167,10 +226,10 @@ tr:hover {
     text-align: center;
     border-collapse: collapse;
 }
-.col1 {width: 23%;}
-.col2 {width: 62%;}
-.col3 {width: 7%;}
-.col4 {width: 8%;}
+.col-1 {width: 23%;}
+.col-2 {width: 62%;}
+.col-3 {width: 7%;}
+.col-4 {width: 8%;}
 /* For links */
 td a {
     text-decoration: none;
@@ -178,6 +237,11 @@ td a {
 }
 td a:hover {
     color: rgba(0, 0, 0,0.5);
+}
+.match-history .country-flag {
+    height: 1em;
+    padding-top: 0.2em;
+    padding-right: 0.5em;
 }
 /* For mobile interface */
 @media screen and (max-width: 600px) {
@@ -200,16 +264,26 @@ td a:hover {
         grid-column-start: 1;
         grid-column-end: 4;
     }
-    .medal {
-        height: 75%;
-    /* Tournaments */
+    .medal { height: 60%; }
+    .sort-menu {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        width: 92%;
     }
+    .sort-by-placement {
+        margin-bottom: 1.5em;
+        grid-template-columns: auto auto auto;
+    }
+    /* Tournaments */
+    .tournament-container { width: 92%; }
     .tournament {
         grid-template-columns: 33.34% 33.33% 33.34%;
         grid-template-rows: 33% 22% 15% 15% 15%;
         height: 5.2em;
     }
+    .tournament .blank { display: none; }
     .tournament-name {
+        height: 10em;
         grid-column-start: 1;
         grid-column-end: 5;
         padding-top: 0.6em;
@@ -222,19 +296,16 @@ td a:hover {
         padding-top: 0.1em;
         height: 1.2em;
     }
-    .blank2, .blank3 {
-        display: none;
-    }
-    .date, .rank-range, .format1, .format2, .player-count, .seed, .view-more {
+    .date, .rank-range, .format-1, .format-2, .participant-count, .seeding, .view-more {
         padding-top: 0.1em;
         font-size: 35%;
         color: white;
     }
-    .format2 {
+    .format-2 {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .seed {
+    .seeding {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -244,28 +315,25 @@ td a:hover {
         grid-template-rows: 1em 1.2em;
         height: 2.4em;
     }
-    .extension-4t, .extension-5t, .extension-6t, .extension-7t {
+    .extension-4t, .extension-5t, .extension-6t {
         grid-template-columns: 33.34% 33.33% 33.34%;
         grid-template-rows: 1em 1.2em 1.2em;
         height: 3.6em;
+    }
+    .extension-7t {
+        grid-template-columns: 33.34% 33.33% 33.34%;
+        grid-template-rows: 1em 1.2em 1.2em 1.2em;
+        height: 4.8em;
     }
     .team-name {
         font-size: 45%;
         grid-column-start: 1; grid-column-end: 4;
     }
-    .teammate {
-        padding-top: 10%;
-    }
-    .country-flag {
-        height: 50%;
-    }
+    .teammate { padding-top: 10%; }
+    .country-flag { height: 50%; }
     /* Match history div element and table*/
-    .match-history {
-        overflow: scroll;
-    }
-    .history {
-        width: 55em;
-    }
+    .match-history { overflow: scroll; }
+    .history { width: 55em; }
     th, td {
         padding-top: 1.2%;
         padding-bottom: 1.2%;

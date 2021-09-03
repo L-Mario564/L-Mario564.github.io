@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Gallery</title>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.js"></script>
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/gallery-data.js" defer></script>
+    <script src="javascript/gallery.js" defer></script>
+</head>
+<body>
+    <div class="topnav" id="topnav">
+        <img class="other" src="assets/icons/trophy.png" width="40" height="40">
+        <a class="inactive" href="index.html">Home</a>
+        <a class="inactive" href="player.html">Player History</a>
+        <a class="inactive" href="staff.html">Staff History</a>
+        <a class="active" href="gallery.html">Banners</a>
+        <a href="javascript:void(0);" class="nav-icon" onclick="responsiveNav()">+</a>
+    </div>
+    <div class="content" >
+        <div style="padding: 1.2em 1.8em; text-align: center;">
+            <h1>Banner Gallery</h1>
+            <p>
+                A display of all my tournament banners that I've earned by either getting a top placement as a player or gifted for staffing.
+            </p>
+        </div><br>
+        <h2>Player Banners</h2><br>
+        <table class="bricklayer" id="player-banners"></table><br><br>
+        <h2>Staff Banners</h2><br>
+        <div class="bricklayer" id="staff-banners"></div>
+    </div><br><br>
+</body>
+</html>

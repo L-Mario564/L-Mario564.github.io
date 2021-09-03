@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/staff.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="javascript/main.js"></script>
-    <script src="javascript/staff.js"></script>
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/staff-data.js" defer></script>
+    <script src="javascript/staff.js" defer></script>
 </head>
 <body>
     <div class="topnav" id="topnav">
@@ -17,13 +18,7 @@
         <a class="inactive" href="index.html">Home</a>
         <a class="inactive" href="player.html">Player History</a>
         <a class="active" href="staff.html">Staff History</a>
-        <div class="topnav-dropdown">
-            <button class="dropdown-button">ENG</button>
-            <div class="dropdown-languages">
-                <a href="staff-es.html">ESP</a>
-            </div>
-        </div>
-            <div class="text">Current language:</div>
+        <a class="inactive" href="gallery.html">Banners</a>
         <a href="javascript:void(0);" class="nav-icon" onclick="responsiveNav()">+</a>
     </div>
     <div class="content">
@@ -33,11 +28,56 @@
             All the tournaments I've staffed in, and the roles I've played in them.<br>
             If you're seeking for staff for your tourney then feel free to ask for help from me (just keep in mind that I'll decline or accept as I feel like).
         </p>
-        </div><br>
+        </div>
+        <h2 style="text-align: center;">Sorting</h2>
+        <div class="sort-menu">
+            <div class="sort-by-date sort-submenu">
+                <div class="sort-type sort-item">Date</div>
+                <div id="descending" class="sort-option sort-item sort-item-active">
+                    <button id="descending-btn" onclick="reSortTournaments('Descending', null, null);">Descending</button>
+                </div>
+                <div id="ascending" class="sort-option sort-item">
+                    <button id="ascending-btn" onclick="reSortTournaments('Ascending', null, null);">Ascending</button>
+                </div>
+            </div>
+            <div class="sort-by-year sort-submenu">
+                <div class="sort-type sort-item">Year</div>
+                <div id="all-time" class="sort-option sort-item sort-item-active">
+                    <button id="all-time-btn" onclick="reSortTournaments(null, 'All', null);">All</button>
+                </div>
+                <div id="2021" class="sort-option sort-item">
+                    <button id="2021-btn" onclick="reSortTournaments(null, '2021', null);">2021</button>
+                </div>
+            </div>
+            <div class="sort-by-role sort-submenu">
+                <div class="sort-type sort-item">Role</div>
+                <div id="all-roles" class="sort-option sort-item sort-item-active">
+                    <button id="all-roles-btn" onclick="reSortTournaments(null, null, 'All');">All</button>
+                </div>
+                <div id="referee-only" class="sort-option sort-item">
+                    <button id="referee-only-btn" onclick="reSortTournaments(null, null, 'Referee');">Referee</button>
+                </div>
+                <div id="mappooler-only" class="sort-option sort-item">
+                    <button id="mappooler-only-btn" onclick="reSortTournaments(null, null, 'Mappooler');">Mappooler</button>
+                </div>
+                <div id="commentator-only" class="sort-option sort-item">
+                    <button id="commentator-only-btn" onclick="reSortTournaments(null, null, 'Commentator');">Commentator</button>
+                </div>
+                <div id="streamer-only" class="sort-option sort-item">
+                    <button id="streamer-only-btn" onclick="reSortTournaments(null, null, 'Streamer');">Streamer</button>
+                </div>
+                <div id="spreadsheeter-only" class="sort-option sort-item">
+                    <button id="spreadsheeter-only-btn" onclick="reSortTournaments(null, null, 'Spreadsheeter');">Spreadsheeter</button>
+                </div>
+                <div id="gfx-designer-only" class="sort-option sort-item">
+                    <button id="gfx-designer-only-btn" onclick="reSortTournaments(null, null, 'GFX Designer');">GFX Designer</button>
+                </div>
+            </div>
+        </div><br><br>
         <div style="text-align: center;">
-            <table class="roles">
-                <col class="roles-col1">
-                <col class="roles-col2">
+            <table class="overview">
+                <col class="overview-col1">
+                <col class="overview-col2">
                 <tr>
                     <th>Roles</th>
                     <th>Times staffed</th>
@@ -66,67 +106,9 @@
                     <td>GFX Designer</td>
                     <td id="gfx">0</td>
                 </tr>
-            </table><br><br><br><br>
-            <table class="staff-history">
-                <col class="staff-history-col1">
-                <col class="staff-history-col2">
-                <col class="staff-history-col3">
-                <tr>
-                    <th>Tournament name</th>
-                    <th>Date</th>
-                    <th>Staffed as</th>
-                </tr>
-                <!--NPC4-->
-                <tr>
-                    <td><a href="https://osu.ppy.sh/community/forums/topics/1278163">Non-Professional Cup 4</a></td>
-                    <td>Mar 21, 2021</td>
-                    <td>
-                        <div class="ref">Referee</div>
-                    </td>
-                </tr>
-                <!--GSHT-->
-                <tr>
-                    <td><a href="https://osu.ppy.sh/community/forums/topics/1266715">Gary's Spring Hidden Tournament</a></td>
-                    <td>Mar 08, 2021</td>
-                    <td>
-                        <div class="ref">Referee</div>
-                    </td>
-                </tr>
-                <!--OT-->
-                <tr>
-                    <td>oldsu! Tournament</td>
-                    <td>Feb 22, 2021</td>
-                    <td>
-                        <div class="sheeter">Spreadsheeter</div>
-                    </td>
-                </tr>
-                <!--EST-->
-                <tr>
-                    <td><a href="https://osu.ppy.sh/community/forums/topics/1238765">Entropy's Spring Tournament</a></td>
-                    <td>Feb 01, 2021</td>
-                    <td>
-                        <div class="ref" style="padding-top: 0.3em;">Referee</div>
-                    </td>
-                </tr>
-                <!--PDN-->
-                <tr>
-                    <td><a href="https://osu.ppy.sh/community/forums/topics/1239289">Pas De Nom</a></td>
-                    <td>Feb 01, 2021</td>
-                    <td>
-                        <div class="sheeter" style="padding-top: 0.3em;">Spreadsheeter</div>
-                        <div class="gfx" style="padding-top: 0.3em;">GFX Designer</div>
-                    </td>
-                </tr>
-                <!--TC-->
-                <tr>
-                    <td><a href="https://osu.ppy.sh/community/forums/topics/1222027">Tomori Cup</a></td>
-                    <td>Jan 10, 2021</td>
-                    <td>
-                        <div class="ref">Referee</div>
-                    </td>
-                </tr>
             </table>
-        </div>
-    </div><br><br>
+        </div><br><br><br>
+        <div class="staff-history" style="font-size: 3em;"></div>
+    </div>
 </body>
 </html>
